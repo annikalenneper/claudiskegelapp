@@ -58,3 +58,6 @@ firebase.json
 
 # Generated files
 *.generated.*
+
+# Node.js modules
+node_modules/

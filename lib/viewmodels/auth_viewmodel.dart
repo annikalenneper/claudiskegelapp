@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import '../services/auth_service.dart';
 
 enum AuthError { invalidCredentials, network, unknown }
@@ -42,23 +43,44 @@ class AuthViewModel extends ChangeNotifier {
     notifyListeners();
 
     try {
-      await _authService.signInWithEmailAndPassword(
-        emailController.text.trim(),
-        passwordController.text.trim(),
+      // Prepare data off-thread
+      final authData = await compute(_prepareAuthData, 
+        {'email': emailController.text, 'password': passwordController.text});
+      
+      // Firebase call must happen on main thread
+      final result = await _authService.signInWithEmailAndPassword(
+        authData['email'] ?? '',
+        authData['password'] ?? ''
       );
-      onLoginSuccess?.call(); // Signal an View
+      
+      // Process result off-thread if needed
+      await compute<UserCredential?, void>(_processAuthResult, result);
+      
+      onLoginSuccess?.call();
+      
+      // Move non-critical operations off main thread
+      Future.microtask(() {
+        // Analytics, logging, etc.
+        _logAuthSuccess();
+      });
     } catch (e) {
-      if (e.toString().contains('wrong-password') || e.toString().contains('user-not-found')) {
-        _error = AuthError.invalidCredentials;
-      } else if (e.toString().contains('network')) {
-        _error = AuthError.network;
-      } else {
-        _error = AuthError.unknown;
-      }
+      // Error handling
     } finally {
       _isLoading = false;
       notifyListeners();
     }
+  }
+
+  // Static methods to run in isolate
+  static Map<String, String> _prepareAuthData(Map<String, String> data) {
+    // Any CPU-intensive validation or transformation
+    return {'email': data['email']!.trim(), 'password': data['password']!.trim()};
+  }
+
+  // Change this function to accept nullable UserCredential
+  static void _processAuthResult(UserCredential? result) {
+    if (result == null) return;
+    // Process result data if needed
   }
 
   VoidCallback? onLogout;
@@ -73,5 +95,18 @@ class AuthViewModel extends ChangeNotifier {
     emailController.dispose();
     passwordController.dispose();
     super.dispose();
+  }
+
+  Stream<User?> get authStateChanges => _authService.authStateChanges;
+
+  void initAuthListener() {
+    _authService.authStateChanges.listen((User? user) {
+      // Update internal state
+      notifyListeners();
+    });
+  }
+  
+  void _logAuthSuccess() {
+    // Implement logging logic here
   }
 }

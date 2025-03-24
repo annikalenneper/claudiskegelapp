@@ -4,12 +4,24 @@ import 'dart:async';
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
+  // Add caching
+  User? _cachedUser;
+
   // Stream for authentication status
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 
-  // Current user
-  User? get currentUser => _auth.currentUser;
+  // Use cached user when possible
+  User? get currentUser {
+    _cachedUser ??= _auth.currentUser;
+    return _cachedUser;
+  }
 
+  // Update cache when auth state changes
+  void initAuthStateListener() {
+    _auth.authStateChanges().listen((User? user) {
+      _cachedUser = user;
+    });
+  }
 
   /// Sign in with email and password
   Future<UserCredential?> signInWithEmailAndPassword(String email, String password) async {
