@@ -12,25 +12,34 @@ import '/styles/constants.dart';
 import 'viewmodels/auth_viewmodel.dart';
 import '/views/auth/firebase_auth_screen.dart';
 import 'views/screens/home_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   FirebaseAuth.instance.setLanguageCode('de');
-  runApp(const KegelApp());
+  await dotenv.load(fileName: '.env');
+
+  // Initialize AuthViewModel early
+  final authViewModel = AuthViewModel();
+  authViewModel.initializeAuth();
+
+  runApp(KegelApp(authViewModel: authViewModel));
 }
 
 class KegelApp extends StatelessWidget {
-  const KegelApp({super.key});
+  final AuthViewModel authViewModel;
+
+  const KegelApp({super.key, required this.authViewModel});
 
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => AuthViewModel(),
+        ChangeNotifierProvider.value(
+          value: authViewModel,
         ),
         ChangeNotifierProvider(
           create: (context) => UserViewModel(),

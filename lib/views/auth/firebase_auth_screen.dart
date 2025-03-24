@@ -25,18 +25,17 @@ class _AuthScreenState extends State<AuthScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final vm = Provider.of<AuthViewModel>(context);
     final screenSize = MediaQuery.of(context).size;
     
     // Logo-Container nimmt fast die gesamte Bildschirmbreite ein (mit Padding)
     final circleSize = screenSize.width * 0.7;
     
     return Scaffold(
-      backgroundColor: AppColors.purpleBackground, // Verwende den lila Modus-Hintergrund
+      backgroundColor: AppColors.primaryColor, // Verwende den lila Modus-Hintergrund
       appBar: AppBar(
         title: Text(AppStrings.appName, style: AppTextStyles.purpleHeading),
         backgroundColor: AppColors.primaryColor,
-        foregroundColor: AppColors.onPurpleText,
+        foregroundColor: AppColors.lightGrey,
         elevation: 0,
         leading: Icon(Icons.sports_bar, color: AppColors.creamBackground), // Beige Icon
       ),
@@ -74,44 +73,52 @@ class _AuthScreenState extends State<AuthScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              CustomTextField(
-                                controller: vm.emailController,
-                                keyboardType: TextInputType.emailAddress,
-                                hint: AppStrings.email,
-                                color: AppColors.backgroundLight, // Beige Farbe beibehalten
-                                icon: Icons.email,
-                                validator: (value) {
-                                  if (value == null || value.isEmpty) return 'E-Mail erforderlich';
-                                  return null;
-                                },
+                              Consumer<AuthViewModel>(
+                                builder: (context, vm, child) => CustomTextField(
+                                  controller: vm.emailController,
+                                  keyboardType: TextInputType.emailAddress,
+                                  hint: AppStrings.email,
+                                  color: AppColors.backgroundLight, // Beige Farbe beibehalten
+                                  icon: Icons.email,
+                                  validator: (value) {
+                                    if (value == null || value.isEmpty) return 'E-Mail erforderlich';
+                                    return null;
+                                  },
+                                ),
                               ),
                               
                               const SizedBox(height: 16),
                               
-                              CustomTextField(
-                                controller: vm.passwordController,
-                                obscureText: true,
-                                hint: AppStrings.password,
-                                color: AppColors.backgroundLight, // Beige Farbe beibehalten
-                                icon: Icons.lock,
-                                validator: (value) {
-                                  return null;
-                                },
+                              Consumer<AuthViewModel>(
+                                builder: (context, vm, child) => CustomTextField(
+                                  controller: vm.passwordController,
+                                  obscureText: true,
+                                  hint: AppStrings.password,
+                                  color: AppColors.backgroundLight, // Beige Farbe beibehalten
+                                  icon: Icons.lock,
+                                  validator: (value) {
+                                    return null;
+                                  },
+                                ),
                               ),
                               
                               const SizedBox(height: 24),
                               
-                              vm.isLoading
-                                ? const Center(child: CircularProgressIndicator(color: AppColors.creamBackground))
-                                : CustomButton(
-                                    text: AppStrings.loginButton,
-                                    onPressed: () {
-                                      if (_formKey.currentState!.validate()) {
-                                        vm.signIn();
-                                      }
-                                    },
-                                    backgroundColor: AppColors.accentBlue, // Beige Farbe beibehalten
-                                  ),
+                              Consumer<AuthViewModel>(
+                                builder: (context, vm, child) {
+                                  return vm.isLoading
+                                    ? const Center(child: CircularProgressIndicator(color: AppColors.creamBackground))
+                                    : CustomButton(
+                                        text: AppStrings.loginButton,
+                                        onPressed: () {
+                                          if (_formKey.currentState!.validate()) {
+                                            vm.signIn();
+                                          }
+                                        },
+                                        backgroundColor: AppColors.accentBlue, // Beige Farbe beibehalten
+                                      );
+                                },
+                              ),
                             ],
                           ),
                         ),

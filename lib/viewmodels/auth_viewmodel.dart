@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -11,7 +13,7 @@ class AuthViewModel extends ChangeNotifier {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  final User? _currentUser = FirebaseAuth.instance.currentUser;
+  User? _currentUser;
   User? get currentUser => _currentUser;
   String get displayName => currentUser?.displayName ?? 'Claudi';
   
@@ -38,10 +40,12 @@ class AuthViewModel extends ChangeNotifier {
   VoidCallback? onLoginSuccess;
 
   Future<void> signIn() async {
+    if (_isLoading) return; // Prevent multiple calls
+    
     _isLoading = true;
     _error = null;
-    notifyListeners();
-
+    notifyListeners(); // Single notification for state changes
+    
     try {
       // Prepare data off-thread
       final authData = await compute(_prepareAuthData, 
@@ -64,10 +68,15 @@ class AuthViewModel extends ChangeNotifier {
         _logAuthSuccess();
       });
     } catch (e) {
-      // Error handling
+      if (e is FirebaseAuthException) {
+        // Map to your error enum
+        _error = _mapFirebaseError(e);
+      } else {
+        _error = AuthError.unknown;
+      }
     } finally {
       _isLoading = false;
-      notifyListeners();
+      notifyListeners(); // Single notification at the end
     }
   }
 
@@ -83,30 +92,75 @@ class AuthViewModel extends ChangeNotifier {
     // Process result data if needed
   }
 
+  AuthError _mapFirebaseError(FirebaseAuthException e) {
+    switch (e.code) {
+      case 'user-not-found':
+      case 'wrong-password':
+      case 'invalid-email':
+      case 'invalid-credential':
+        return AuthError.invalidCredentials;
+      case 'network-request-failed':
+        return AuthError.network;
+      default:
+        if (kDebugMode) {
+          print('Unmapped Firebase error: ${e.code} - ${e.message}');
+        }
+        return AuthError.unknown;
+    }
+  }
+
   VoidCallback? onLogout;
 
   Future<void> signOut() async {
-    await _authService.signOut();
-    onLogout?.call();
+    final wasAuthenticated = isAuthenticated;
+    
+    try {
+      await _authService.signOut();
+      // No need to set _currentUser = null as the auth listener will handle this
+      onLogout?.call();
+    } catch (e) {
+      // Handle sign out errors
+      _error = AuthError.unknown;
+      // Only notify if the error matters to UI
+      notifyListeners();
+    }
+    
+    // No need for notifyListeners here - the auth listener will handle it
   }
+
+  StreamSubscription<User?>? _authSubscription;
 
   @override
   void dispose() {
     emailController.dispose();
     passwordController.dispose();
+    _authSubscription?.cancel();
     super.dispose();
   }
 
   Stream<User?> get authStateChanges => _authService.authStateChanges;
 
   void initAuthListener() {
-    _authService.authStateChanges.listen((User? user) {
-      // Update internal state
-      notifyListeners();
+    // Cancel existing subscription if any
+    _authSubscription?.cancel();
+    
+    _authSubscription = _authService.authStateChanges.listen((User? user) {
+      // Only notify if user state actually changed
+      final userChanged = (_currentUser?.uid != user?.uid);
+      _currentUser = user;
+      if (userChanged) {
+        notifyListeners();
+      }
     });
   }
   
   void _logAuthSuccess() {
     // Implement logging logic here
+  }
+
+  // Call this in your app initialization
+  void initializeAuth() {
+    _currentUser = _authService.currentUser;
+    initAuthListener();
   }
 }
