@@ -1,0 +1,20 @@
+{
+    "scripts": {
+        "generate-firebase-config": "node scripts/generateFirebaseConfig.js",
+        "build": "npm run generate-firebase-config && flutter build apk"
+    },
+    "name": "claudiskegelapp",
+    "version": "1.0.0",
+    "description": "- Prioritiziation of \"vibe coding principles\" over handwritten code\r - Mostly prompted, AI-generated code\r - Holding some control over sw-architecture",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.7"
+    }
+}

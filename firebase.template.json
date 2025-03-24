@@ -1,0 +1,25 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "claudiskegelapp",
+          "appId": "${FIREBASE_APP_ID_ANDROID}",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "claudiskegelapp",
+          "configurations": {
+            "android": "${FIREBASE_APP_ID_ANDROID}",
+            "ios": "${FIREBASE_APP_ID_IOS}",
+            "macos": "${FIREBASE_APP_ID_MACOS}",
+            "web": "${FIREBASE_APP_ID_WEB}",
+            "windows": "${FIREBASE_APP_ID_WINDOWS}"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+flutter/ephemeral
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+.idea/
+.vscode/
+*.iml
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+android/gradle.properties
+
+# iOS
+ios/Pods/
+ios/Flutter/Generated.xcconfig
+ios/.symlinks/
+ios/Flutter/flutter_export_environment.sh
+ios/Runner.xcworkspace/
+ios/.generated/
+
+# Firebase 
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Sonstiges
+.env
+*.log
+*.lock
+*.keystore
+*.jks
+.DS_Store
