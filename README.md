@@ -1,5 +1,4 @@
-## Vibe Coding experiment / fun project
+## Experiment / fun project
 
-- Prioritiziation of "vibe coding principles" over handwritten code
-- Mostly prompted, AI-generated code
-- Holding some control over sw-architecture
+- Prioritiziation of AI-generated over handwritten code
+- Holding some control over sw-architecture and basic principles
