@@ -97,6 +97,7 @@ class _AuthScreenState extends State<AuthScreen> {
                                   color: AppColors.backgroundLight, // Beige Farbe beibehalten
                                   icon: Icons.lock,
                                   validator: (value) {
+                                    if (value == null || value.isEmpty) return 'Passwort erforderlich';
                                     return null;
                                   },
                                 ),
