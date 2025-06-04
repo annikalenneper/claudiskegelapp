@@ -6,7 +6,7 @@ var predefinedGameTemplates = [
     title: 'Klassisches Spiel',
     description: 'Jede*r spielt 10 Würfe, höchste Punktzahl gewinnt.',
     minPlayers: 2,
-    maxPlayers: 8,
+    maxPlayers: 20,
     scoringInstructions: 'Addiere die Anzahl der umgeworfenen Kegel.',
     mode: GameMode.individual,
   ),
