@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -40,49 +41,49 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCsFyhbFmY2s3wp4FqOc1C3bskJZ8KPm3U',
-    appId: '1:486017608860:web:4555145b869ad44fc9d159',
-    messagingSenderId: '486017608860',
-    projectId: 'claudiskegelapp',
-    authDomain: 'claudiskegelapp.firebaseapp.com',
-    storageBucket: 'claudiskegelapp.firebasestorage.app',
-    measurementId: 'G-88M2CERJ42',
-  );
+  static FirebaseOptions get web => FirebaseOptions(
+        apiKey: dotenv.env['FIREBASE_API_KEY_WEB'] ?? '',
+        appId: dotenv.env['FIREBASE_APP_ID_WEB'] ?? '',
+        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB'] ?? '',
+        projectId: dotenv.env['FIREBASE_PROJECT_ID_WEB'] ?? '',
+        authDomain: dotenv.env['FIREBASE_AUTH_DOMAIN_WEB'] ?? '',
+        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET_WEB'] ?? '',
+        measurementId: dotenv.env['FIREBASE_MEASUREMENT_ID_WEB'] ?? '',
+      );
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD5YVtCn9Ivnj-tbE4B3Wa0_nW3cVoUzBE',
-    appId: '1:486017608860:android:53727579ad944a35c9d159',
-    messagingSenderId: '486017608860',
-    projectId: 'claudiskegelapp',
-    storageBucket: 'claudiskegelapp.firebasestorage.app',
-  );
+  static FirebaseOptions get android => FirebaseOptions(
+        apiKey: dotenv.env['FIREBASE_API_KEY_ANDROID'] ?? '',
+        appId: dotenv.env['FIREBASE_APP_ID_ANDROID'] ?? '',
+        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_ANDROID'] ?? '',
+        projectId: dotenv.env['FIREBASE_PROJECT_ID_ANDROID'] ?? '',
+        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET_ANDROID'] ?? '',
+      );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDKI1W48jELWB5qNOGaTakn0nj4cD8Afwo',
-    appId: '1:486017608860:ios:75c2d358fddd2a1dc9d159',
-    messagingSenderId: '486017608860',
-    projectId: 'claudiskegelapp',
-    storageBucket: 'claudiskegelapp.firebasestorage.app',
-    iosBundleId: 'com.example.claudiskegelapp',
-  );
+  static FirebaseOptions get ios => FirebaseOptions(
+        apiKey: dotenv.env['FIREBASE_API_KEY_IOS'] ?? '',
+        appId: dotenv.env['FIREBASE_APP_ID_IOS'] ?? '',
+        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_IOS'] ?? '',
+        projectId: dotenv.env['FIREBASE_PROJECT_ID_IOS'] ?? '',
+        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET_IOS'] ?? '',
+        iosBundleId: dotenv.env['FIREBASE_IOS_BUNDLE_ID'] ?? '',
+      );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDKI1W48jELWB5qNOGaTakn0nj4cD8Afwo',
-    appId: '1:486017608860:ios:75c2d358fddd2a1dc9d159',
-    messagingSenderId: '486017608860',
-    projectId: 'claudiskegelapp',
-    storageBucket: 'claudiskegelapp.firebasestorage.app',
-    iosBundleId: 'com.example.claudiskegelapp',
-  );
+  static FirebaseOptions get macos => FirebaseOptions(
+        apiKey: dotenv.env['FIREBASE_API_KEY_MACOS'] ?? '',
+        appId: dotenv.env['FIREBASE_APP_ID_MACOS'] ?? '',
+        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_MACOS'] ?? '',
+        projectId: dotenv.env['FIREBASE_PROJECT_ID_MACOS'] ?? '',
+        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET_MACOS'] ?? '',
+        iosBundleId: dotenv.env['FIREBASE_IOS_BUNDLE_ID_MACOS'] ?? '',
+      );
 
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCsFyhbFmY2s3wp4FqOc1C3bskJZ8KPm3U',
-    appId: '1:486017608860:web:4de29cb1f64e3112c9d159',
-    messagingSenderId: '486017608860',
-    projectId: 'claudiskegelapp',
-    authDomain: 'claudiskegelapp.firebaseapp.com',
-    storageBucket: 'claudiskegelapp.firebasestorage.app',
-    measurementId: 'G-GP5RXDG0NC',
-  );
+  static FirebaseOptions get windows => FirebaseOptions(
+        apiKey: dotenv.env['FIREBASE_API_KEY_WINDOWS'] ?? '',
+        appId: dotenv.env['FIREBASE_APP_ID_WINDOWS'] ?? '',
+        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WINDOWS'] ?? '',
+        projectId: dotenv.env['FIREBASE_PROJECT_ID_WINDOWS'] ?? '',
+        authDomain: dotenv.env['FIREBASE_AUTH_DOMAIN_WINDOWS'] ?? '',
+        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET_WINDOWS'] ?? '',
+        measurementId: dotenv.env['FIREBASE_MEASUREMENT_ID_WINDOWS'] ?? '',
+      );
 }
