@@ -17,71 +17,19 @@ class AppColors {
   static const Color accentYellow = Color(0xFFFFD54F); // Goldgelb
   static const Color lightGrey = Color(0xFFF5F5F5); // Helles Grau
   
-  // Modus 1: Lila Hintergrund, helle Schrift
-  static const Color purpleBackground = primaryColor;
-  static const Color onPurpleText = creamBackground;
-  static const Color onPurpleTextSecondary = backgroundLight;
-  
-  // Modus 2: Grauer Hintergrund, lila Schrift
-  static const Color greyBackground = lightGrey;
-  static const Color onGreyText = primaryColor;
-  static const Color onGreyTextSecondary = darkPurple;
-  
-  // Die Klasse sollte nicht instanziiert werden
   AppColors._();
 }
 
-/// Wiederverwendbare Textstile für die gesamte App
+
 class AppTextStyles {
-  // Textstile für lila Hintergrund
   static const TextStyle purpleHeading = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 24.0,
-    color: AppColors.onPurpleText,
+    color: AppColors.darkPurple,
     letterSpacing: 1.2,
   );
   
-  static const TextStyle purpleSubheading = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 18.0,
-    color: AppColors.onPurpleText,
-    letterSpacing: 0.8,
-  );
-  
-  static const TextStyle purpleBody = TextStyle(
-    fontSize: 16.0,
-    color: AppColors.onPurpleText,
-  );
-  
-  static const TextStyle purpleCaption = TextStyle(
-    fontSize: 14.0,
-    color: AppColors.onPurpleTextSecondary,
-  );
-  
-  // Textstile für grauen Hintergrund
-  static const TextStyle greyHeading = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 24.0,
-    color: AppColors.onGreyText,
-    letterSpacing: 1.2,
-  );
-  
-  static const TextStyle greySubheading = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 18.0,
-    color: AppColors.onGreyText,
-    letterSpacing: 0.8,
-  );
-  
-  static const TextStyle greyBody = TextStyle(
-    fontSize: 16.0,
-    color: AppColors.onGreyText,
-  );
-  
-  static const TextStyle greyCaption = TextStyle(
-    fontSize: 14.0,
-    color: AppColors.onGreyTextSecondary,
-  );
+
   
   // Allgemeine Textstile
   static const TextStyle heading = TextStyle(
