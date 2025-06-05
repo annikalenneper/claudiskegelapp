@@ -1,46 +1,51 @@
-import 'package:claudiskegelapp/models/team_model.dart';
 import 'package:uuid/uuid.dart';
 
 class PlayedGame {
-  final String id;
-  final String templateId;
-  final DateTime date;
+  final String id; 
+
+  final String appointmentId;
+  final String gameId;
+
   final List<String> participantIds;
-  final List<Team>? teams; // optional, nur bei Teamspielen
-  final Map<String, int> scores; // key = userId ODER teamId → Score
-  final String? location;
+  final Map<String, int> singleScores;
+
+  final Map<String, int> teamScores;
+  final Map<String, List<String>> teams;
 
   PlayedGame({
     String? id,
-    required this.templateId,
-    required this.date,
+    required this.appointmentId,
+    required this.gameId,
     required this.participantIds,
-    required this.scores,
-    this.teams,
-    this.location,
-  }) : id = id ?? Uuid().v4().toString();
+    required this.singleScores,
+    this.teams = const {},
+    this.teamScores = const {},
+  }) : id = id ?? Uuid().v4().toString(); 
 
   Map<String, dynamic> toMap() => {
     'id': id,
-    'templateId': templateId,
-    'date': date,
+    'appointmentId': appointmentId,
+    'gameId': gameId,
     'participantIds': participantIds,
-    'scores': scores,
-    'location': location,
-    'teams': teams?.map((t) => t.toMap()).toList(),
+    'singleScores': singleScores,
+    'teamScores': teamScores,
+    'teams': teams,
   };
 
-  factory PlayedGame.fromMap(Map<String, dynamic> map) => PlayedGame(
-    id: map['id'],
-    templateId: map['templateId'],
-    date: map['date'],
-    participantIds: List<String>.from(map['participantIds'] ?? []),
-    scores: Map<String, int>.from(map['scores'] ?? {}),
-    location: map['location'],
-    teams: map['teams'] != null
-        ? List<Map<String, dynamic>>.from(map['teams'])
-            .map((t) => Team.fromMap(t))
-            .toList()
-        : null,
-  );
+  factory PlayedGame.fromMap(Map<String, dynamic> map) {
+    return PlayedGame(
+      id: map['id'] as String?,
+      appointmentId: map['appointmentId'] as String? ?? '',
+      gameId: map['gameId'] as String? ?? '',
+      participantIds: List<String>.from(map['participantIds'] as List<dynamic>? ?? []),
+      singleScores: Map<String, int>.from(map['singleScores'] as Map<dynamic, dynamic>? ?? {}),
+      teamScores: Map<String, int>.from(map['teamScores'] as Map<dynamic, dynamic>? ?? {}),
+      teams: (map['teams'] as Map<String, dynamic>?)?.map(
+        (key, value) => MapEntry(
+          key,
+          List<String>.from(value as List<dynamic>? ?? []),
+        ),
+      ) ?? const {},
+    );
+  }
 }
