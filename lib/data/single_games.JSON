@@ -1,0 +1,475 @@
+
+[
+  {
+    "id": "ostereidieb",
+    "title": "Ostereidieb",
+    "goal": "Am Ende noch möglichst viele Ostereier besitzen, während die Hälfte der Spieler keine Eier mehr hat.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Bevor das Spiel beginnt, stellt den Kegelautomaten auf „Volle“ mit Kranzwertung ein und verteilt vier bunte Ostereier (Schokoeier oder gefärbte Eier) an jeden Kegler.",
+        "Lost die Kegelreihenfolge aus und schreibt die Namen der Kegler an die Tafel. Die Reihenfolge ist wichtig, da sie den Spielfluss beeinflusst.",
+        "Der erste Spieler beginnt und wirft in die Vollen. Das erzielte Ergebnis wird an der Tafel notiert.",
+        "Der zweite Spieler in der Reihenfolge versucht, eine höhere Punktzahl zu werfen. Gelingt ihm dies, verliert der vorherige Spieler ein Osterei, und der zweite Spieler darf es ihm klauen.",
+        "Wirft der zweite Spieler weniger Punkte, sind die Eier des ersten Keglers vorerst sicher. Danach ist der dritte Kegler an der Reihe und muss versuchen, das Ergebnis des zweiten Spielers zu überbieten.",
+        "Wirft der zweite Spieler dieselbe Punktzahl wie der erste Spieler, bleibt das Osterei beim ersten Spieler. Der nächste Spieler wirft dann gegen beide vorherigen Spieler. Erzielt der dritte Kegler mehr Holz als jeweils die beiden vorherigen Spieler, klaut er beiden Spielern je ein Ei seiner Wahl.",
+        "Die Runden gehen durchgängig weiter, sodass der erste Spieler, wenn er wieder an der Reihe ist, gegen das Ergebnis des letzten Spielers werfen muss.",
+        "Ein Pudel oder eine Rinne werden mit null Punkten gewertet.",
+        "Das Spiel endet, sobald die Hälfte der Spieler keine Ostereier mehr hat."
+      ],
+    "example" : [ 
+        "Spieler 1 wirft 4 Holz",
+        "Spieler 2 wirft 6 Holz - Spieler 1 verliert ein Ei",
+        "Spieler 3 wirft 6 Holz - es gibt keine Änderung, da Punktgleichheit herrscht",
+        "Spieler 4 wirft 7 Holz - sowohl Spieler 1 als auch Spieler 2 verlieren ein Ei, da Spieler 4 beide übertrifft"],
+    "teamGame": false,
+    "duration": "ca. 46 Min. bei 8 Spielern"
+  },
+  {
+    "id": "fuenfer-her",
+    "title": "Fünfer her",
+    "goal": "Mit so wenig Würfen wie möglich eine Fünf kegeln.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ohne Kranzwertung ein.",
+      "Legt die Kegelreihenfolge fest und bereitet die Tafel vor.",
+      "Jeder Kegler ist einmal an der Reihe und versucht, mit möglichst wenigen Würfen eine Fünf zu kegeln.",
+      "An der Tafel werden pro Spieler die benötigten Würfe durch Striche notiert (ein Strich pro Wurf).",
+      "Der Spieler, der zuerst die wenigsten Würfe benötigt hat, gewinnt."
+    ],
+    "example": [
+      "Spieler A benötigt 2 Würfe, um eine Fünf zu erzielen.",
+      "Spieler B benötigt 4 Würfe, um eine Fünf zu erzielen.",
+      "Spieler C benötigt 1 Wurf, um eine Fünf zu erzielen.",
+      "In diesem Fall gewinnt Spieler C."
+    ],
+    "teamGame": false,
+    "duration": "ca. 10 Min. bei 8 Spielern"
+  },
+  {
+    "id": "pfaelzerspiel",
+    "title": "Pfälzerspiel",
+    "goal": "Am Ende die wenigsten Strafstriche haben, indem man die Zahlen der Mitspieler (aber nicht die eigene) wirft.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ohne Kranzwertung ein.",
+      "Legt die Kegelreihenfolge fest (am besten reihum, wie man am Tisch sitzt) und schreibt die Namen auf die Tafel.",
+      "Jeder Kegler hat zuerst einen Wurf in die Vollen, um seine eigene Zahl zu ermitteln. Die geworfenen Holz werden hinter den Namen notiert. Mehrere Spieler können die gleiche Zahl haben.",
+      "Sobald jeder seine eigene Zahl hat, schreibt ihr die noch nicht geworfenen Zahlen separat auf.",
+      "Wirft jemand einen Pudel/Rinne, muss er neu werfen und erhält sofort einen Strafstrich.",
+      "Danach werden insgesamt 10 Runden gekegelt.",
+      "Es gelten folgende Regeln: Kegelt ein Spieler die Zahl eines Mitspielers, erhält dieser Mitspieler einen Strich. Kegelt ein Spieler seine eigene Zahl, erhält er selbst einen Strich. Kegelt ein Spieler einen Pudel/Rinne, erhält er selbst einen Strich. Kegelt ein Spieler eine zuvor nicht geworfene Zahl, erhält der Kegler selbst einen Strich.",
+      "Wenn mehrere Regeln zutreffen, werden alle Regeln nacheinander gewertet.",
+      "Gewinner nach zehn Runden ist der Kegler mit den wenigsten Strichen."
+    ],
+    "example": [
+      "Spieler A wirft seine eigene Zahl (z.B. 7).",
+      "In einer späteren Runde wirft Spieler B die 7 (Zahl von Spieler A) – Spieler A bekommt einen Strafstrich.",
+      "Spieler C wirft seine eigene Zahl – Spieler C bekommt einen Strafstrich.",
+      "Spieler D wirft einen Pudel – Spieler D bekommt einen Strafstrich.",
+      "Spieler E wirft eine Zahl, die noch nicht als 'eigene Zahl' eines Spielers vergeben wurde (z.B. 2) – Spieler E bekommt einen Strafstrich."
+    ],
+    "teamGame": false,
+    "duration": "ca. 42 Min. bei 8 Spielern"
+  },
+  {
+    "id": "kegeln-auf-zeit",
+    "title": "Kegeln auf Zeit",
+    "goal": "Die meisten Punkte in einer festgelegten Zeit (z.B. 10 Minuten) erzielen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ohne Kranzwertung ein.",
+      "Legt die Kegelreihenfolge fest und bereitet die Tafel vor.",
+      "Jeder Kegler hat eine festgelegte Zeit (z.B. 6 Minuten), um so viele Punkte wie möglich zu erzielen.",
+      "Die erzielten Punkte werden an der Tafel notiert.",
+      "Der Kegler mit den meisten Punkten am Ende der Zeit gewinnt."
+    ],
+    "example": [
+      "Spieler A erzielt in 10 Minuten 120 Punkte.",
+      "Spieler B erzielt in 10 Minuten 150 Punkte.",
+      "Spieler C erzielt in 10 Minuten 100 Punkte.",
+      "In diesem Fall gewinnt Spieler B."
+    ],
+    "teamGame": false,
+    "duration": "Variabel"
+  },
+{
+  "id": "telefonieren",
+  "title": "Telefonieren",
+  "goal": "Am Ende die wenigsten Striche haben, indem man andere Mitspieler 'anruft' und möglichst lange 'telefoniert'.",
+  "imageUrl": "",
+  "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle mit Kranzwertung“ ein und legt die Kegelreihenfolge fest (am besten reihum, wie man auf der Kegelbahn sitzt).",
+      "Das Spiel besteht aus 5 Runden zu je 2 Durchgängen. Ein Kranz zählt 16 Punkte.",
+      "**Vorrunde (1. Wurf):** Jeder Spieler wirft einmal in die Vollen, um seine persönliche 'Telefonnummer' zu bestimmen. Die geworfenen Holz werden neben dem Namen auf der Tafel notiert. Mehrere Spieler können die gleiche Nummer haben.",
+      "**Hauptrunden (1. und 2. Wurf mit 5 Runden):** Jeder Kegler hat nun zwei Würfe in die Vollen.",
+      "Mit dem ersten Wurf 'wählt' man eine Telefonnummer; man sollte versuchen, nicht die eigene Nummer zu wählen, obwohl dies zulässig ist.",
+      "Mit dem zweiten, direkt darauffolgenden Wurf bestimmt man die 'Länge des Anrufs'. Die gefallenen Holz des zweiten Wurfs werden als Striche hinter allen Namen notiert, die diese 'Telefonnummer' (aus dem ersten Wurf) haben.",
+      "Es besteht Holzpflicht bei allen Würfen. Wenn der erste Wurf ein Pudel (Rinne) ist oder eine Nummer getroffen wird, die nicht als 'Telefonnummer' vergeben wurde, wird der Wurf wiederholt (neuer Anwahlversuch).",
+      "Sollte auch der zweite Versuch erfolglos sein, kann ein dritter Wurf ausgeführt werden. Ist auch dieser Wurf ohne Erfolg, erhält der Spieler selbst 10 Striche in seiner Zeile.",
+      "Nach fünf Runden ist der Kegler mit den wenigsten notierten Strichen der Gewinner."
+    ],
+    "example": [
+      "Irmi kegelt in der Vorrunde eine 5. Das ist ihre Telefonnummer.",
+      "Später in einer Hauptrunde wirft Spieler X als ersten Wurf eine 5 (ruft also Irmi an).",
+      "Spieler X wirft als zweiten Wurf 7 Holz. Irmi bekommt 7 Striche auf ihr Konto geschrieben.",
+      "Würde Spieler X im ersten Wurf einen Pudel werfen, müsste er den Wurf wiederholen, um eine gültige Telefonnummer zu wählen."
+    ],
+    "teamGame": false,
+    "duration": "ca. 35 Min. bei 8 Spielern"
+  },
+  {
+    "id": "telefonieren",
+    "title": "Telefonieren",
+    "goal": "Am Ende die wenigsten Striche haben, indem man andere Mitspieler 'anruft' und möglichst lange 'telefoniert'.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle mit Kranzwertung“ ein und legt die Kegelreihenfolge fest (am besten reihum, wie man auf der Kegelbahn sitzt).",
+      "Das Spiel besteht aus 5 Runden zu je 2 Durchgängen. Ein Kranz zählt 16 Punkte.",
+      "**Vorrunde (1. Wurf):** Jeder Spieler wirft einmal in die Vollen, um seine persönliche 'Telefonnummer' zu bestimmen. Die geworfenen Holz werden neben dem Namen auf der Tafel notiert. Mehrere Spieler können die gleiche Nummer haben.",
+      "**Hauptrunden (1. und 2. Wurf mit 5 Runden):** Jeder Kegler hat nun zwei Würfe in die Vollen.",
+      "Mit dem ersten Wurf 'wählt' man eine Telefonnummer; man sollte versuchen, nicht die eigene Nummer zu wählen, obwohl dies zulässig ist.",
+      "Mit dem zweiten, direkt darauffolgenden Wurf bestimmt man die 'Länge des Anrufs'. Die gefallenen Holz des zweiten Wurfs werden als Striche hinter allen Namen notiert, die diese 'Telefonnummer' (aus dem ersten Wurf) haben.",
+      "Es besteht Holzpflicht bei allen Würfen. Wenn der erste Wurf ein Pudel (Rinne) ist oder eine Nummer getroffen wird, die nicht als 'Telefonnummer' vergeben wurde, wird der Wurf wiederholt (neuer Anwahlversuch).",
+      "Sollte auch der zweite Versuch erfolglos sein, kann ein dritter Wurf ausgeführt werden. Ist auch dieser Wurf ohne Erfolg, erhält der Spieler selbst 10 Striche in seiner Zeile.",
+      "Nach fünf Runden ist der Kegler mit den wenigsten notierten Strichen der Gewinner."
+    ],
+    "example": [
+      "Irmi kegelt in der Vorrunde eine 5. Das ist ihre Telefonnummer.",
+      "Später in einer Hauptrunde wirft Spieler X als ersten Wurf eine 5 (ruft also Irmi an).",
+      "Spieler X wirft als zweiten Wurf 7 Holz. Irmi bekommt 7 Striche auf ihr Konto geschrieben.",
+      "Würde Spieler X im ersten Wurf einen Pudel werfen, müsste er den Wurf wiederholen, um eine gültige Telefonnummer zu wählen."
+    ],
+    "teamGame": false,
+    "duration": "ca. 35 Min. bei 8 Spielern"
+  },
+  {
+    "id": "1000-in-9-wuerfen",
+    "title": "1000 in 9 Würfen",
+    "goal": "Am nächsten an die 1000 Punkte herankommen, indem man in drei Runden mit je drei Würfen Hunderterzahlen bildet und diese addiert.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ein. Kränze zählen nur mit den gefallenen Holz, also 8 Punkte.",
+      "Jeder Spieler hat insgesamt 9 Würfe, aufgeteilt in 3 Runden zu je 3 Würfen.",
+      "**1. Runde:** Die Spieler werfen dreimal in die Vollen. Nach jedem Wurf kann das Ergebnis frei an eine beliebige Position geschrieben werden, um eine dreistellige Zahl zu bilden (z.B. bei Würfen 5-6-3 kann man 356 schreiben).",
+      "**2. Runde:** Die Spieler werfen dreimal in die Vollen. Die Wurfergebnisse werden von rechts nach links geschrieben, um eine dreistellige Zahl zu bilden (z.B. bei Würfen 3-6-4 wird 364 geschrieben).",
+      "**3. Runde:** Die Spieler werfen dreimal in die Vollen. Die Wurfergebnisse werden von links nach rechts geschrieben, um eine dreistellige Zahl zu bilden (z.B. bei Würfen 2-2-3 wird 322 geschrieben).",
+      "Ein Pudel/Rinne wird bei diesem Spiel mit 9 Punkten gewertet.",
+      "Zur Wertung werden die Ergebnisse der drei Runden addiert.",
+      "Es gewinnt der Kegler, der am nächsten an die 1000 Punkte kommt. Sowohl Unterschreitungen als auch Überschreitungen sind erlaubt."
+    ],
+    "example": [
+      "Spieler wirft in Runde 1: 5-6-3, schreibt 356.",
+      "Spieler wirft in Runde 2: 3-6-4, schreibt 364.",
+      "Spieler wirft in Runde 3: 2-2-3, schreibt 322.",
+      "Gesamtergebnis: 356 + 364 + 322 = 1.042."
+    ],
+    "teamGame": false,
+    "duration": "ca. 32 Min. bei 8 Spielern"
+  },
+  {
+    "id": "hausnummer-555",
+    "title": "Hausnummer 555",
+    "goal": "So nahe wie möglich an die Hausnummer 555 herankommen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ohne Kranzwertung ein.",
+      "Jeder Kegler hat einen Durchgang mit 3 Würfen.",
+      "Nach jedem Wurf muss der Spieler **ansagen**, an welche der drei Stellen (Hunderter-, Zehner-, oder Einerstelle) das Wurfergebnis (die gefallenen Holz) geschrieben werden soll. Ein späterer Tausch der Stellen ist nicht möglich.",
+      "Wirft der Kegler einen Pudel (Rinne), wird dieser mit 9 Holz gewertet.",
+      "Der Kegler gewinnt, der am nächsten an die Hausnummer 555 herangekommen ist. Dabei wird die gesamte gebildete Zahl verglichen, nicht die einzelnen Ziffern."
+    ],
+    "example": [
+      "Spieler 1 wirft: 5 Holz. Sagt an: Hunderterstelle. Ergebnis: 5__",
+      "Spieler 1 wirft: 4 Holz. Sagt an: Einerstelle. Ergebnis: 5_4",
+      "Spieler 1 wirft: 6 Holz. Sagt an: Zehnerstelle. Ergebnis: 564",
+      "Spieler 2 wirft: 5 Holz. Sagt an: Hunderterstelle. Ergebnis: 5__",
+      "Spieler 2 wirft: 5 Holz. Sagt an: Zehnerstelle. Ergebnis: 55_",
+      "Spieler 2 wirft: 4 Holz. Sagt an: Einerstelle. Ergebnis: 554",
+      "In diesem Beispiel gewinnt Spieler 2 (554), da er näher an der 555 ist als Spieler 1 (564)."
+    ],
+    "teamGame": false,
+    "duration": "ca. 20 Min. bei 8 Spielern",
+    "variants": [
+      "Statt nach dem Wurf ansagen, an welche Stelle das Wurfergebnis geschrieben wird, muss der Kegler dies **vor dem Wurf** ansagen."
+    ]
+  },
+  {
+    "id": "steigerung",
+    "title": "Steigerung",
+    "goal": "Zu den drei Keglern mit den meisten Punkten gehören, indem man besser wirft als der direkte Vorkegler.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Lost vor Spielbeginn die Reihenfolge aus (z.B. Sitzreihenfolge im Uhrzeigersinn).",
+      "Stellt den Kegelautomaten auf „Vollen“ ohne Kranzwertung ein.",
+      "Es werden so viele Durchgänge gespielt, wie Kegler mitspielen. Der Startspieler rotiert pro Durchgang, sodass jeder einmal anfangen darf.",
+      "Damit ein Kegelwurf zählt und die Punkte notiert werden, muss der Kegler **mehr Holz werfen** als sein direkter Vordermann. (Hat der Vordermann z.B. 5 Holz geworfen, muss der Kegler danach mindestens 6 Holz umwerfen.)",
+      "Hat der Kegler es geschafft, werden die gefallenen Holz als Punkte an der Tafel notiert.",
+      "Sollte er es nicht geschafft haben, wird ein Strich angeschrieben.",
+      "Nach allen Durchgängen werden alle Wurfergebnisse des Keglers summiert.",
+      "Sieger des Kegelspiels sind die drei Kegler mit den höchsten addierten Punktzahlen."
+    ],
+    "example": [
+      "Spieler 1 wirft 7 Holz. (Startspieler, erhält 7 Punkte)",
+      "Spieler 2 wirft 5 Holz. (Weniger als 7 Holz von Spieler 1) – Spieler 2 erhält einen Strich.",
+      "Spieler 3 wirft 8 Holz. (Mehr als 5 Holz, aber weniger als 7 Holz von Spieler 1) – Spieler 3 erhält einen Strich.",
+      "Spieler 4 wirft 9 Holz. (Mehr als 8 Holz von Spieler 3) – Spieler 4 erhält 9 Punkte."
+    ],
+    "teamGame": false,
+    "duration": "ca. 32 Min. bei 8 Spielern",
+    "variants": [
+      "Das Spielprinzip wird umgedreht: Gewertet werden alle Würfe, die es **nicht** geschafft haben, **weniger Holz** als der Vorgänger zu werfen. Bei einem Pudel (Rinne) erhält man 9 Strafpunkte. Gewonnen haben die drei Kegler mit den wenigsten Punkten."
+    ]
+  },
+  {
+    "id": "5er-spiel",
+    "title": "5er Spiel",
+    "goal": "Als erster Kegler sein Punktekonto von 300 auf 0 zu bringen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Schreibt zuerst alle Namen der Kegler an die Tafel. Jeder Spieler startet mit 300 Punkten.",
+      "Gekegelt wird der Reihe nach in die **Vollen** mit Kranzwertung.",
+      "Für die Punktewertung gelten folgende Regeln:",
+      "Pro gefallenem Kegel werden **-5 Punkte** vom aktuellen Punktestand abgezogen.",
+      "Ist das **Vorderholz** gefallen, werden zusätzlich **-10 Punkte** abgezogen.",
+      "Bei **neun gefallenen Kegeln** werden **-100 Punkte** abgezogen.",
+      "Ein **Kranz** führt zu einem Abzug von **-150 Punkten**.",
+      "Wird eine **5** gekegelt, werden **+50 Punkte** zum aktuellen Punktestand addiert (es werden also keine Punkte subtrahiert, selbst wenn andere Regeln zutreffen würden).",
+      "Bei einem **Pudel** (Rinne) werden ebenfalls **+50 Punkte** zum aktuellen Punktestand addiert.",
+      "Der Spieler, der zuerst 0 Punkte erreicht oder unterschreitet, hat gewonnen.",
+      "Sollten mehrere Spieler gleichzeitig 0 Punkte erreichen, wird der Gewinner durch drei Würfe in die Vollen ausgekegelt."
+    ],
+    "example": [
+      "Ein Spieler hat 300 Punkte. Wirft 8 Holz (-40 Punkte). Neuer Stand: 260 Punkte.",
+      "Ein Spieler hat 200 Punkte. Wirft einen Kranz (-150 Punkte). Neuer Stand: 50 Punkte.",
+      "Ein Spieler hat 100 Punkte. Wirft eine 5 (+50 Punkte). Neuer Stand: 150 Punkte.",
+      "Ein Spieler hat 70 Punkte. Wirft einen Pudel (+50 Punkte). Neuer Stand: 120 Punkte."
+    ],
+    "teamGame": false,
+    "duration": "ca. 64 Min. bei 8 Spielern"
+  },
+  {
+    "id": "wie-du-mir-so-ich-dir",
+    "title": "Wie du mir, so ich dir",
+    "goal": "Am Ende die wenigsten Striche haben, indem man mehr Holz wirft als der Vorder- und Hintermann.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Wählt einen Startkegler (z.B. durch Auskegeln der höchsten Holzzahl) und kegelt reihum in die **Vollen** mit Kranzwertung.",
+      "Das Standardspiel besteht aus insgesamt **20 Durchgängen**.",
+      "Jeder Kegler wirft einmal auf das volle Bild. Ziel ist es, **mehr Holz** als der direkte Vordermann und der Hintermann zu werfen.",
+      "**Strichvergabe:**",
+      "Jeder direkte Nachbar, der **schlechter** als der eigene Wurf ist, bekommt einen Strich.",
+      "Ist ein oder sind beide Nachbarn **besser** als der eigene Wurf, erhält man selbst einen bzw. zwei Striche.",
+      "Bei einem **Pudel** (Rinne) erhält der Kegler selbst einen Strich und eventuell weitere Striche durch die Wertung der Nachbarn.",
+      "Zur Ergebniswertung empfiehlt es sich, die Namen der Kegler in einem Kreis aufzuschreiben, damit jeder zwei Nachbarn hat.",
+      "Die Wurfergebnisse werden pro Runde zuerst aufgeschrieben und nachdem der letzte Kegler geworfen hat, ausgewertet und die Striche vergeben.",
+      "Sieger nach 20 Runden ist der Spieler mit den wenigsten Strichen."
+    ],
+    "example": [
+      "Spieler A (Hintermann von B) wirft 7 Holz.",
+      "Spieler B wirft 5 Holz.",
+      "Spieler C (Vordermann von B) wirft 6 Holz.",
+      "Auswertung für Spieler B (Wurf 5):",
+      "Im Vergleich zu A (7 Holz): B ist schlechter, also bekommt B einen Strich.",
+      "Im Vergleich zu C (6 Holz): B ist schlechter, also bekommt B einen weiteren Strich. (Insgesamt 2 Striche für B in dieser Runde)"
+    ],
+    "teamGame": false,
+    "duration": "ca. 45 Min. bei 8 Spielern",
+    "variants": [
+      "Statt 20 Runden zu spielen, können Spieler mit 20 Strichen aus der Runde fliegen. Der Gewinner ist der Kegler, der am Schluss noch übriggeblieben ist. Dies ändert die Konkurrenzkonstellationen, da sich die Vorder- und Hintermänner im Laufe des Spiels ändern können."
+    ]
+  },
+  {
+    "id": "spiel-44",
+    "title": "Spiel 44",
+    "goal": "Als erster Spieler so schnell wie möglich genau 44 Punkte erreichen, wobei nur gerade Wurfergebnisse zählen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Gekegelt wird reihum in die **Vollen** mit Kranzwertung.",
+      "Jeder Kegler hat pro Durchgang **drei Würfe**.",
+      "Es werden **nur die Würfe gezählt, deren Ergebnis eine gerade Holzzahl ist**. Ungerade Ergebnisse werden nicht gewertet und bringen keine Punkte.",
+      "Das Spiel wird so lange gespielt, bis ein Spieler die 44er Ziellinie überkegelt hat.",
+      "Sieger ist der Spieler, der zuerst die 44 Punkte erreicht oder überschreitet."
+    ],
+    "example": [
+      "Ein Kegler wirft im ersten Wurf 7 Holz (wird nicht gewertet).",
+      "Im zweiten Wurf wirft er 4 Holz (wird gewertet).",
+      "Im dritten Wurf wirft er 5 Holz (wird nicht gewertet).",
+      "Der Spieler erhält in diesem Durchgang insgesamt 4 Punkte und muss noch 40 weitere Holz werfen."
+    ],
+    "teamGame": false,
+    "duration": "ca. 42 Min. bei 8 Spielern"
+  },
+  {
+    "id": "haeuser-abreissen",
+    "title": "Häuser abreißen",
+    "goal": "Am Schluss der Spieler sein, dessen Haus noch mindestens einen Strich besitzt, indem man immer mehr Holz wirft als der Vorgänger.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Vollen“ ohne Kranzwertung ein.",
+      "Schreibt die Namen an die Tafel und malt für jeden Kegler ein 'Haus' mit einer bestimmten Anzahl von Strichen (z.B. 5, 6, 7 oder 8 Striche, siehe Varianten).",
+      "Gekegelt wird reihum. In jeder Runde rotiert der Startspieler, sodass jeder einmal Startspieler ist.",
+      "Der Startspieler kegelt vor und sein Wurf gilt als Ausgangsergebnis für die Runde.",
+      "Jeder nachfolgende Kegler muss **mindestens ein Holz mehr** werfen als sein direkter Vorgänger. 'Mit ist shit' – gleiche Punktzahl ist nicht ausreichend.",
+      "**Ausnahme:** Bei einem 'Alle Neune' (9 gefallene Kegel) genügt es, einen 9er zu kegeln, um keinen Strich entfernt zu bekommen, auch wenn der Vorgänger mehr hatte.",
+      "**Strafen:** Schafft ein Spieler es nicht, mehr Holz als sein Vorgänger zu werfen, wird ein Strich von seinem Haus weggewischt.",
+      "Ist die Runde einmal durch, beginnt ein neuer Durchgang mit einem neuen Startspieler, der wieder vorlegt.",
+      "Der Spieler, dessen Haus komplett weggewischt wurde (keine Striche mehr übrig), scheidet aus.",
+      "Es gewinnt der Kegler, der am Schluss noch übrigbleibt und dessen Haus noch mindestens einen Strich besitzt."
+    ],
+    "example": [
+      "1. Kegler (Startspieler) = 6 Holz",
+      "2. Kegler = 7 Holz (kein Strich wird entfernt, da 7 > 6)",
+      "3. Kegler = 5 Holz (Strich wird entfernt, da 5 < 7)",
+      "4. Kegler = 5 Holz (Strich wird entfernt, da 5 < 5)",
+      "5. Kegler = 6 Holz (kein Strich wird entfernt, da 6 > 5)",
+      "6. Kegler = 4 Holz (Strich wird entfernt, da 4 < 6)"
+    ],
+    "teamGame": false,
+    "duration": "ca. 45 Min. bei 8 Spielern",
+    "variants": [
+      "Die Spiellänge kann durch die Anzahl der Striche im 'Haus' variiert werden: 5, 6, 7 oder 8 Striche sind gängige Optionen.",
+      "Umgekehrtes Spielprinzip: Statt einen Strich wegzulöschen, wird ein Strich deutlich nachgezeichnet. Der Spieler, dessen Haus vollständig nachgezeichnet ist, scheidet aus. Gewinner ist auch hier der letzte verbleibende Spieler."
+    ]
+  },
+  {
+    "id": "tag-und-nacht-kegelspiel",
+    "title": "Tag und Nacht Kegelspiel",
+    "goal": "Nach einer festgelegten Anzahl von Tag- und Nachtrunden die meisten Gesamtpunkte zu kegeln.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Legt vor Spielbeginn fest, wie viele Runden – also 'Tage' und 'Nächte' – gespielt werden sollen.",
+      "Das Kegelspiel wird reihum in die **Vollen** mit Kranzwertung gespielt. Jeder Kegler hat pro Durchgang einen Wurf.",
+      "**Tagspiel (1. Durchgang):** In dieser Runde zählt jedes gefallene Holz einen Punkt.",
+      "**Nachtspiel (2. Durchgang):** Hierzu wird das Licht der Kegelbahn oder zumindest das der Kegel ausgeschaltet, sodass die Bahn im Dunkeln liegt.",
+      "Im Nachtspiel zählen die gekegelten Holz **doppelt**.",
+      "Ein Pudel (Rinne) zählt null Punkte.",
+      "Gewinner ist der Kegler, der nach allen vereinbarten Runden die meisten Gesamtpunkte hat."
+    ],
+    "example": [
+      "**Tagwurf:** Spieler A wirft 7 Holz. Punkte für diese Runde: 7.",
+      "**Nachtwurf:** Spieler A wirft 5 Holz. Punkte für diese Runde: 5 * 2 = 10.",
+      "Gesamtpunktzahl von Spieler A nach diesen zwei Würfen: 17."
+    ],
+    "teamGame": false,
+    "duration": "ca. 24 Min. bei 8 Spielern",
+    "variants": [
+      "**'Nacht der Nächte':** Die letzte Runde wird besonders spannend gestaltet. In dieser letzten Nachtrunde zählen die Punkte **vierfach**."
+    ]
+  },
+  {
+    "id": "boese-5",
+    "title": "Böse 5",
+    "goal": "Die Anfangspunktzahl von 30 auf null oder weniger zu bringen, wobei eine geworfene '5' immer zum Punktestand addiert wird.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Schreibt die Kegler reihum an die Tafel und lost einen Startspieler aus.",
+      "Jeder Spieler beginnt mit **30 Punkten** als Startpunktzahl.",
+      "Gekegelt wird reihum in die **Vollen** mit Kranzwertung.",
+      "Bei jedem Wurf werden die geworfenen Holz von der aktuellen Punktzahl des Spielers **subtrahiert**.",
+      "**Ausnahme: Wird genau fünf Holz gekegelt ('Böse 5'), werden diese nicht subtrahiert, sondern zur aktuellen Punktzahl **addiert**.",
+      "Gewonnen hat der Spieler, der als erster einen Punktestand von null oder niedriger erreicht (man muss also nicht genau auf null Punkte kommen)."
+    ],
+    "example": [
+      "Ein Spieler hat 30 Punkte. Wirft 8 Holz. Neuer Stand: 22 Punkte (30 - 8 = 22).",
+      "Ein Spieler hat 15 Punkte. Wirft 5 Holz ('Böse 5'). Neuer Stand: 20 Punkte (15 + 5 = 20).",
+      "Ein Spieler hat 4 Punkte. Wirft 3 Holz. Neuer Stand: 1 Punkt (4 - 3 = 1).",
+      "Ein Spieler hat 2 Punkte. Wirft 4 Holz. Neuer Stand: -2 Punkte (2 - 4 = -2). Dieser Spieler hat gewonnen."
+    ],
+    "teamGame": false,
+    "duration": "ca. 32 Min. bei 8 Spielern",
+    "variants": [
+      {
+        "name": "Variante A: Exakt null Punkte",
+        "description": "Das Ziel ist das Erreichen von **genau null Punkten**. Beim letzten Wurf darf man keine Zahl niedriger als null erreichen. Wenn ein Kegler z.B. noch genau 5 Punkte Reststand hat, benötigt er mindestens zwei Würfe, da geworfene fünf Holz immer addiert werden."
+      },
+      {
+        "name": "Variante B: Kassenaufbesserung",
+        "description": "Zur Aufbesserung der Vereinskasse kann der Reststand der Spieler am Ende des Spiels in Cent umgerechnet werden, die dann gezahlt werden."
+      }
+    ]
+  },
+  {
+    "id": "1001",
+    "title": "1001",
+    "goal": "Als erster 1001 Punkte erreichen. Bei Gleichstand gewinnt der Spieler mit den meisten Punkten.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Gekegelt wird reihum in die **Vollen** mit Kranzwertung. Jeder Spieler hat pro Runde einen Wurf.",
+      "Bei jedem Wurf muss der Kegler das **Vorderholz oder das Hinterholz** mit werfen, um Bonuspunkte zu erhalten.",
+      "Punkte werden gemäß folgender Liste addiert:",
+      "- **Kranzhand**: 150 Punkte",
+      "- **Alle Neune**: 130 Punkte",
+      "- **Nur Vorderholz** (wenn nur das Vorderholz fällt): 200 Punkte",
+      "- **2 Holz mit Vorder- oder Hinterholz**: 40 Punkte",
+      "- **3 Holz mit Vorder- oder Hinterholz**: 50 Punkte",
+      "- **4 Holz mit Vorder- oder Hinterholz**: 60 Punkte",
+      "- **5 Holz mit Vorder- oder Hinterholz**: 70 Punkte",
+      "- **6 Holz mit Vorder- oder Hinterholz**: 80 Punkte",
+      "- **7 Holz mit Vorder- oder Hinterholz**: 90 Punkte",
+      "- **8 Holz mit Vorder- oder Hinterholz**: 100 Punkte",
+      "- **Jedes Holz ohne Vorder- oder Hinterholz**: 5 Punkte (pro Holz)",
+      "Ein **Pudel/Rinne** führt zu einem Abzug von **100 Punkten** vom aktuellen Punktestand.",
+      "Der Sieger des Spiels ist der Kegler, der als erster 1001 Punkte erreicht. Der Durchgang wird jedoch immer zu Ende gespielt.",
+      "Falls am Ende des Durchgangs mehrere Spieler 1001 Punkte oder mehr erreicht haben, gewinnt der Spieler mit den **meisten Gesamtpunkten**."
+    ],
+    "example": [
+      "Spieler A hat 950 Punkte und wirft einen Kranzhand: 950 + 150 = 1100 Punkte.",
+      "Spieler B hat 980 Punkte und wirft 'Nur Vorderholz': 980 + 200 = 1180 Punkte.",
+      "In diesem Fall, obwohl Spieler A zuerst 1001 erreicht, gewinnt Spieler B, da er am Ende des Durchgangs 1180 Punkte hat, verglichen mit 1100 Punkten von Spieler A."
+    ],
+    "teamGame": false,
+    "duration": "ca. 36 Min. bei 8 Spielern"
+  },
+  {
+    "id": "swinger-club",
+    "title": "Swinger Club",
+    "goal": "Nach vier Runden als Einzelspieler die meisten Punkte zu haben, wobei die Mannschaftspaare am Ende jeder Runde wechseln.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Bildet vor Spielbeginn Zweier-Pärchen. Wichtig ist eine gerade Anzahl von Spielern in der Kegelgruppe.",
+      "Jede Zweier-Mannschaft kegelt in jeder Runde viermal auf **Abräumen**.",
+      "Als Ergebnis erhält jeder Spieler das **Mannschaftsergebnis** aufgeschrieben.",
+      "Am Ende jeder Runde müssen sich die Spieler der **besten** und der **schlechtesten** Mannschaft neue Partner suchen.",
+      "Das **schlechteste Pärchen** darf sich als erstes neue Partner suchen.",
+      "Nach insgesamt **vier Runden** ist der **Einzelspieler** Sieger, der die meisten Punkte gesammelt hat."
+    ],
+    "example": [
+      "Runde 1: Team A (Spieler 1 & 2) erreicht 50 Punkte; Team B (Spieler 3 & 4) erreicht 40 Punkte; Team C (Spieler 5 & 6) erreicht 60 Punkte; Team D (Spieler 7 & 8) erreicht 30 Punkte.",
+      "Am Ende von Runde 1: Team C ist das beste, Team D ist das schlechteste.",
+      "Die Spieler von Team D (Spieler 7 & 8) suchen sich zuerst neue Partner. Danach suchen sich die Spieler von Team C (Spieler 5 & 6) neue Partner. Die restlichen Teams bleiben möglicherweise zusammen oder bilden sich neu, je nach Gruppendynamik.",
+      "Punkte für Runde 1: Spieler 1 & 2 erhalten je 50 Punkte; Spieler 3 & 4 erhalten je 40 Punkte; Spieler 5 & 6 erhalten je 60 Punkte; Spieler 7 & 8 erhalten je 30 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "ca. 24 Min. bei 8 Spielern"
+  },
+  {
+    "id": "mensch-aerger-dich-nicht",
+    "title": "Mensch ärger dich nicht",
+    "goal": "Als erster Kegler seine Figur ins Zielfeld zu bekommen (mit Spielbrett) oder genau 49 Punkte zu erreichen (ohne Spielbrett).",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "**Spielablauf mit Spielbrett:**",
+      "Stellt pro Kegler eine Figur ins 'Haus' des Spielbretts (mehr Figuren sind für längere Spiele möglich).",
+      "Gekegelt wird reihum in die **Vollen** mit Kranzwertung.",
+      "Jeder Spieler darf **dreimal werfen**.",
+      "Wer eine **Sechs** wirft, darf seine erste Figur auf das Startfeld stellen und danach sofort noch einmal kegeln, um die Figur um die geworfenen Holz vorzurücken.",
+      "Kegler, die in der ersten Runde keine Sechs hatten und somit nicht aus dem Haus kamen, müssen weiterhin dreimal werfen, bis sie eine Sechs erzielen.",
+      "Es besteht **keine Holzpflicht**. Wer einen Pudel wirft, also kein Kegel umfällt, darf nicht vorrücken und hat Pech gehabt.",
+      "Es wird nun so lange gekegelt, bis der erste Spieler sein Zielfeld erreicht und alle Figuren der Reihe nach ganz hinten platziert hat.",
+      "Beim Umrunden des Spielfelds darf zudem nicht vergessen werden, die Gegner herauszuwerfen. Seid ihr geworfen worden und sitzt wieder im Haus, habt ihr wieder 3 Würfe, um eine Sechs zu werfen.",
+      "",
+      "**Spielablauf ohne Spielbrett (Alternative):**",
+      "Jeder Kegler versucht, als Erster genau **49 Punkte (Holz)** zu erreichen.",
+      "Gekegelt wird reihum in die **Vollen** mit Kranzwertung.",
+      "Jeder Wurf zählt zu den Gesamtpunkten hinzu.",
+      "Das Spiel erfordert Präzision, um die 49 Punkte exakt zu erreichen, da das Überschreiten der Zahl ein Rückschlag sein kann (ähnlich dem 'Mensch ärgere dich nicht' Prinzip)."
+    ],
+    "example": [
+      "**Mit Spielbrett:** Spieler A wirft eine 6, setzt Figur auf Start, wirft dann 7 Holz und zieht 7 Felder vor. Spieler B wirft 3, dann 2, dann 0 (Pudel), bleibt im Haus. Spieler A landet später auf einem Feld, das von Spieler C besetzt ist; Spieler C wird 'herausgeworfen' und muss seine Figur zurück ins Haus stellen, wo er erneut eine 6 werfen muss, um ins Spiel zurückzukehren.",
+      "**Ohne Spielbrett:** Spieler A hat 45 Punkte und wirft 4 Holz, erreicht genau 49 Punkte und gewinnt. Spieler B hat 47 Punkte und wirft 5 Holz, übertrifft 49 Punkte und muss vielleicht neu beginnen oder wird bestraft (Regel kann vorab festgelegt werden)."
+    ],
+    "teamGame": false,
+    "duration": "ca. 90 Min. bei 8 Spielern"
+  }
+]
+

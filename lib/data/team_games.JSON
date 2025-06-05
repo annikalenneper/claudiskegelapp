@@ -1,0 +1,733 @@
+[
+  {
+    "id": "kamelrennen",
+    "title": "Kamelrennen",
+    "goal": "Mannschaft B muss Mannschaft A überholen, bevor Mannschaft A die Ziellinie (null Punkte) erreicht. Mannschaft A gewinnt, wenn sie zuerst null Punkte erreicht. Mannschaft B gewinnt, wenn sie Mannschaft A überholt und dann null Punkte erreicht.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Bildet zwei Mannschaften (Mannschaft A und Mannschaft B). Es wird eine maximale Mannschaftsgröße von 6 Keglern pro Team empfohlen.",
+      "Stellt den Kegelautomaten auf „Volle“ mit Kranzwertung (ein Kranz zählt zwölf Punkte) ein.",
+      "Schreibt die Namen der Kegler zur jeweiligen Mannschaftsseite an die Tafel. Die Reihenfolge an der Tafel entspricht der Abfolge, in der die Mannschaften kegeln.",
+      "Mannschaft A startet mit **100 Punkten** als Startguthaben.",
+      "Mannschaft B startet mit **200 Punkten** als Startguthaben.",
+      "Gekegelt wird immer abwechselnd: Zuerst ein Kegler der Mannschaft A, danach ein Kegler aus Mannschaft B.",
+      "Jedes Wurfergebnis der **Mannschaft A** wird vom eigenen Punktestand **subtrahiert**.",
+      "Die Wurfergebnisse von **Mannschaft B** werden zuerst **verdoppelt** und anschließend von ihrem Punktekonto **subtrahiert**.",
+      "Ein Pudel/Rinne wird immer mit null Punkten gewertet."
+    ],
+    "example": [
+      "Mannschaft A startet mit 100 Punkten. Der 1. Kegler der Mannschaft A wirft 6 Holz. Neuer Punktestand Mannschaft A: 100 - 6 = 94.",
+      "Mannschaft B startet mit 200 Punkten. Der 1. Kegler der Mannschaft B wirft 7 Holz. Neuer Punktestand Mannschaft B: 200 - (2 * 7) = 200 - 14 = 186."
+    ],
+    "teamGame": true,
+    "duration": "variabel (schnelles Spiel)"
+  },
+  {
+    "id": "rechts-links-vorne-hinten-mitte",
+    "title": "Rechts-Links-Vorne-Hinten-Mitte",
+    "goal": "Als Zweierteam die meisten Punkte zu erzielen, indem in jeder der fünf Runden spezifische Kegel fallen, um die geworfenen Holz zu multiplizieren.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Bildet vor Spielbeginn Zweierteams.",
+      "Stellt den Kegelautomaten auf „Abräumen“ ein.",
+      "Das Spiel besteht aus **fünf Runden**. In jeder Runde hat jeder Kegler **einen Wurf**, wodurch jedes Team insgesamt 2 Würfe pro Runde hat, um das volle Bild abzuräumen. Ihr könnt mannschaftsintern entscheiden, ob ihr beide Würfe hintereinander oder abwechselnd werft.",
+      "Die gefallenen Holz werden wie folgt gewertet:",
+      "- In **Runde 1**: Fallen die gefallenen Holz (Holzzahl) **mal sich selbst (multipliziert)**, wenn der **rechte Bauer** fällt. Andernfalls zählen sie einfach.",
+      "- In **Runde 2**: Fallen die gefallenen Holz **mal sich selbst**, wenn der **linke Bauer** fällt. Andernfalls zählen sie einfach.",
+      "- In **Runde 3**: Fallen die gefallenen Holz **mal sich selbst**, wenn das **Vorderholz** fällt. Andernfalls zählen sie einfach.",
+      "- In **Runde 4**: Fallen die gefallenen Holz **mal sich selbst**, wenn das **Hinterholz** fällt. Andernfalls zählen sie einfach.",
+      "- In **Runde 5**: Fallen die gefallenen Holz **mal sich selbst**, wenn der **König** fällt. Andernfalls zählen sie einfach.",
+      "Ein Pudel/Rinne wird mit null Punkten gewertet.",
+      "Sollte das Bild mit dem ersten Wurf abgeräumt werden, darf der Spieler erneut auf ein volles Bild werfen (maximal 162 Punkte pro Runde sind theoretisch erreichbar).",
+      "Sieger ist die Mannschaft mit den meisten Gesamtpunkten nach allen fünf Runden."
+    ],
+    "example": [
+      "**Runde 1 (rechter Bauer):**",
+      "Team A wirft 7 Holz, und der rechte Bauer fällt. Punkte: 7 * 7 = 49.",
+      "Team B wirft 8 Holz, aber der rechte Bauer fällt nicht. Punkte: 8.",
+      "**Runde 3 (Vorderholz):**",
+      "Team A wirft 9 Holz, und das Vorderholz fällt. Punkte: 9 * 9 = 81.",
+      "Team B wirft 5 Holz, aber das Vorderholz fällt nicht. Punkte: 5."
+    ],
+    "teamGame": true,
+    "duration": "variabel (abhängig von 5 Runden)"
+  },
+  {
+    "id": "huerdenlauf-ii",
+    "title": "Hürdenlauf II",
+    "goal": "Als Mannschaft exakt 111 Punkte zu kegeln, wobei die Hürden 25, 50, 75 und 100 ebenfalls exakt getroffen werden müssen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+      "Stellt den Kegelautomaten auf „Volle“ ohne Kranzwertung ein.",
+      "Bildet zwei Mannschaften (z.B. durch Auslosen oder Wahl durch Captains).",
+      "Gekegelt wird abwechselnd: Ein Kegler einer Mannschaft wirft jeweils einmal in die Vollen.",
+      "Das Ziel der Mannschaften ist es, zuerst **genau 111 Punkte** zu kegeln.",
+      "Jedes Wurfergebnis wird immer zur Punktezahl der eigenen Mannschaft hinzugezählt, **ABER:**",
+      "Bestimmte **Hürden** (25, 50, 75 und 100 Punkte) müssen **exakt** getroffen werden.",
+      "**Wird bei einer Hürde mehr gekegelt als nötig**, verfallen die Punkte, und die Mannschaft bleibt auf ihrem aktuellen Punktestand vor der Hürde stehen. Der nachfolgende Mannschaftskegler muss dann versuchen, die Hürdenzahl exakt zu treffen.",
+      "Auch die **Endpunktzahl von 111** muss **genau** getroffen werden.",
+      "Wenn eine Mannschaft genau 111 Punkte erreicht, ist das Spiel beendet.",
+      "Hat die Mannschaft, die das Spiel begonnen hat, zuerst die 111 Punkte erreicht, hat die andere Mannschaft noch einen **Nachwurf**, um auszugleichen.",
+      "Ein Pudel/Rinne zählt 0 Punkte (und zieht ggf. eine Strafzahlung von 10 Cent in die Kegelkasse nach sich).",
+      "Schafft es die zweite Mannschaft, auszugleichen (ebenfalls genau 111 Punkte zu erreichen), wird der Gewinner separat ausgekegelt: Jeder Kegler beider Mannschaften hat einen zusätzlichen Wurf in die Vollen. Die Ergebnisse der Spieler werden addiert, und die Mannschaft mit den meisten Punkten gewinnt diesen Stich."
+    ],
+    "example": [
+      "Mannschaft A hat 20 Punkte. Der nächste Kegler wirft 5 Holz. Neuer Stand Mannschaft A: 25 (Hürde 25 exakt getroffen).",
+      "Mannschaft B hat 45 Punkte. Der nächste Kegler wirft 6 Holz. Neuer Stand Mannschaft B: 45 (Die 6 Holz verfallen, da 45 + 6 = 51, was über der Hürde 50 liegt. Mannschaft B bleibt bei 45 Punkten stehen).",
+      "Mannschaft A hat 95 Punkte. Der nächste Kegler wirft 8 Holz. Neuer Stand Mannschaft A: 103 (Punkte werden addiert, da 100 eine Hürde ist und 103 diese überschreitet - hier greift die 'genau treffen'-Regel für Hürden. Die 8 Holz verfallen, da 95 + 8 = 103, was über der Hürde 100 liegt. Mannschaft A bleibt bei 95 Punkten stehen)."
+    ],
+    "teamGame": true,
+    "duration": "variabel"
+  },
+  {
+    "id": "stina",
+    "title": "Stina",
+    "goal": "Als Mannschaft die meisten Punkte erzielen, indem man nur auf die mittlere Kegelreihe (Stina) wirft.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Bildet zwei Mannschaften (durch Losen oder Wahl).",
+        "Stellt den Kegelautomaten auf das **Kegelbild 'Stina'** ein. Das bedeutet, nur das Vorderholz, der König und das Hinterholz bleiben stehen.",
+        "Die Mannschaften beginnen abwechselnd auf das Kegelbild zu werfen.",
+        "Jeder Kegler hat **einen Wurf** pro Runde mit dem Ziel, die 'Stina' abzuräumen.",
+        "Für jeden Spieler wird die geworfene Holzzahl aufgeschrieben.",
+        "Insgesamt werden **drei Runden** gekegelt.",
+        "Am Ende der Runden werden die Ergebnisse jeder Mannschaft addiert.",
+        "Die Mannschaft mit den meisten Gesamtpunkten hat gewonnen."
+    ],
+    "example": [
+        "**Runde 1:**",
+        "Team A, Spieler 1 wirft 2 Holz.",
+        "Team B, Spieler 1 wirft 3 Holz.",
+        "Team A, Spieler 2 wirft 3 Holz.",
+        "Team B, Spieler 2 wirft 1 Holz.",
+        "Aktueller Stand: Team A = 5 Punkte, Team B = 4 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "~30 Min. mit 8 Spielern"
+    },
+    {
+    "id": "bauernfaenger",
+    "title": "Bauernfänger",
+    "goal": "Als Mannschaft die meisten Punkte erzielen, indem man einen Bauern und seine Vorderdame abräumt.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Bildet zwei Mannschaften (durch Losen oder Wahl).",
+        "Stellt die Kegelbahn auf eines der folgenden Kegelbilder ein: **Linker Bauer mit Vorderdame** oder **Rechter Bauer mit Vorderdame**.",
+        "Die Mannschaften werfen abwechselnd auf das Kegelbild.",
+        "Jeder Kegler hat **drei Würfe** pro Runde mit dem Ziel, den Bauern und seine Dame abzuräumen.",
+        "Für jeden Spieler wird die geworfene Holzzahl aufgeschrieben.",
+        "Nach insgesamt **drei gekegelten Runden** werden die Ergebnisse jeder Mannschaft addiert.",
+        "Die Mannschaft mit den meisten Gesamtpunkten hat gewonnen."
+    ],
+    "example": [
+        "**Runde 1:**",
+        "Team A, Spieler 1 wirft 2 Holz.",
+        "Team B, Spieler 1 wirft 3 Holz.",
+        "Team A, Spieler 2 wirft 3 Holz.",
+        "Team B, Spieler 2 wirft 1 Holz.",
+        "Aktueller Stand: Team A = 5 Punkte, Team B = 4 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "~42 Min. mit 8 Spielern"
+    },
+    {
+    "id": "fieber",
+    "title": "Fieber",
+    "goal": "Als Mannschaft das 'Fieberthermometer' unter 42° halten. Die Mannschaft mit dem niedrigsten Fieberstand am Ende gewinnt.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Teilt eure Kegelgruppe in Mannschaften mit je 3 bis 5 Spielern auf und bestimmt die Reihenfolge der Mannschaften und der Teammitglieder.",
+        "Stellt den Kegelautomaten auf **Volle ohne Kranzwertung**.",
+        "Die Kegler der Mannschaften kegeln abwechselnd **einen Wurf in die Vollen**.",
+        "Die Wurfergebnisse jeder Mannschaft werden addiert, bis die Mannschaft **30° Fieber** (30 Holz) erreicht oder überschritten hat.",
+        "**Ab 30° Fieber gelten folgende Wurfregeln:**",
+        "- Ein Wurfergebnis von **5 oder 7 Holz** lässt das Fieber um **2° sinken (-2 Punkte)**.",
+        "- Alle **anderen Wurfergebnisse** lassen das Fieber um **2° steigen (+2 Punkte)**.",
+        "Wenn das Fieber einer Mannschaft unter 30° fällt, werden die Wurfergebnisse wieder wie am Anfang addiert, bis die 30° wieder überschritten sind. Danach gelten wieder die Wurfregeln von oben.",
+        "Die Mannschaft, deren Fieber **42° (42 Holz) überschreitet**, muss ausscheiden.",
+        "Ein Kranz zählt 8 Punkte und ein Pudel 9 Punkte.",
+        "Legt eine maximale Anzahl an Runden fest, um die Spiellänge zu begrenzen.",
+        "Sobald die letzte Runde fertig gespielt wurde, gewinnt die Mannschaft mit dem **niedrigsten Fieber**.",
+        "Bei Gleichstand der Fieberstände kann die Siegermannschaft ausgekegelt werden: Jeder Kegler der betreffenden Mannschaften wirft einmal auf die Vollen. Die Mannschaft mit den wenigsten Punkten gewinnt."
+    ],
+    "example": [
+        "**Start:** Mannschaft A hat 0 Punkte.",
+        "Spieler A1 wirft 8 Holz. Neuer Stand: 8 Punkte.",
+        "Spieler A2 wirft 12 Holz. Neuer Stand: 20 Punkte.",
+        "Spieler A3 wirft 11 Holz. Neuer Stand: 31 Punkte. (Fieber über 30°!)",
+        "Nächster Wurf von Spieler A1 (aktuell 31° Fieber):",
+        "Wirft 5 Holz. Neuer Stand: 31 - 2 = 29 Punkte. (Fieber wieder unter 30°!)",
+        "Nächster Wurf von Spieler A2 (aktuell 29° Fieber):",
+        "Wirft 6 Holz. Neuer Stand: 29 + 6 = 35 Punkte. (Fieber wieder über 30°!)",
+        "Nächster Wurf von Spieler A3 (aktuell 35° Fieber):",
+        "Wirft 8 Holz. Neuer Stand: 35 + 2 = 37 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "~40 Min. mit 8 Spielern"
+    },
+    {
+    "id": "volle-kanne",
+    "title": "Volle Kanne",
+    "goal": "Innerhalb von 5 Minuten als Mannschaft die meisten abgeräumten Kegel sammeln.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Bildet zwei Mannschaften und wählt je einen Zählmeister pro Team. Die Zählmeister sind für die Zeitnahme sowie die Start- und Stopp-Signale zuständig.",
+        "Stellt den Kegelautomaten auf **Volle** und aktiviert die **Kranzwertung**.",
+        "Die erste Mannschaft begibt sich komplett an die Bahn und bewaffnet sich mit Kegelkugeln.",
+        "Der Zählmeister des gegnerischen Teams gibt das Startsignal und startet die Stoppuhr.",
+        "Die Mannschaft wirft auf das volle Bild. Dabei darf **nur eine Kugel gleichzeitig** auf der Bahn unterwegs sein, und es dürfen **nicht alle gleichzeitig werfen** – Teamabstimmung ist gefragt!",
+        "Nach **5 Minuten** gibt der Zählmeister das Stoppsignal.",
+        "Die erzielten Punkte (geworfene Holz) der Mannschaft werden notiert.",
+        "Gönnt der Mannschaft eine kurze Pause, bevor die nächste Mannschaft an der Reihe ist.",
+        "Gewonnen hat die Mannschaft mit den meisten Gesamtpunkten."
+    ],
+    "example": [
+        "Mannschaft A kegelt 5 Minuten lang und erzielt dabei folgende Würfe: 8 Holz, 7 Holz, 9 Holz, 6 Holz, 8 Holz. Gesamtpunkte für Mannschaft A: 38 Holz.",
+        "Mannschaft B kegelt 5 Minuten lang und erzielt: 7 Holz, 9 Holz, 7 Holz, 8 Holz, 9 Holz. Gesamtpunkte für Mannschaft B: 40 Holz.",
+        "In diesem Beispiel gewinnt Mannschaft B mit 40 Holz."
+    ],
+    "teamGame": true,
+    "duration": "~15 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Schärfere Regeln",
+        "description": "Es werden nur Würfe gezählt, bei denen **mindestens 5 Kegel** gefallen sind."
+        },
+        {
+        "name": "Kasse aufbessern",
+        "description": "Die Verlierermannschaft zahlt **pro Person 0,50 €** in die Kegelkasse."
+        }
+    ]
+    },
+    {
+    "id": "hasenjagd",
+    "title": "Hasenjagd",
+    "goal": "Der Hase gewinnt, wenn er 60 oder mehr Punkte erreicht. Die Jäger gewinnen, wenn sie den Hasen 'erlegen', indem sie genau seine Punktzahl erreichen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Legt die Reihenfolge fest, in der gekegelt wird, und bestimmt, wer zuerst als Hase startet (am besten reihum am Tisch, um Verwirrung zu vermeiden).",
+        "Stellt den Kegelautomaten auf **Volle**. Kränze zählen 8 Holz.",
+        "Der **Hase** startet mit dem ersten Wurf in die Vollen und legt eine Punktzahl vor. Diese Punkte werden für den Hasen notiert.",
+        "Der erste **Jäger** ist an der Reihe und muss versuchen, **genau dieselbe Punktzahl** zu werfen, wie der Hase vorgelegt hat. Jägerpunkte werden separat von den Hasenpunkten notiert und können addiert oder subtrahiert werden (siehe Sonderregeln).",
+        "**Szenarien:**",
+        "- Schafft der Jäger es nicht, die Hasenpunktzahl zu erreichen, darf der Hase 'einen Haken schlagen' und erneut in die Vollen werfen. Seine neuen Punkte werden zu seinen vorherigen Hasenpunkten addiert.",
+        "- Der nächste Jäger muss dann versuchen, diese erhöhte Hasenpunktzahl mit seinem Wurf zu erreichen.",
+        "- Sind die Hasen- und Jägerpunkte identisch, ist der Hase 'erlegt'.",
+        "- Das Werfen geht abwechselnd weiter, bis der Hase entweder erlegt ist oder insgesamt **60 Punkte oder mehr** erreicht hat. Erreicht der Hase 60+ Punkte, ist er 'in seinen Bau geflüchtet' und hat gewonnen.",
+        "**Sonderregeln:**",
+        "- Wirft der Hase eine **5**, 'springt' er **10 Punkte** nach vorne (diese 10 Punkte werden zu seinem aktuellen Stand addiert).",
+        "- Wirft ein Jäger eine **5**, zählt sie nur 5 Punkte (normal) **und** der nächste Jäger darf **sofort noch einmal** hinterherwerfen, wodurch der Hasenwurf übersprungen wird (dies gibt den Jägern eine zusätzliche Chance, aufzuholen).",
+        "- Die Jäger dürfen immer entscheiden, ob ihr Wurf zu ihren bisherigen Jägerpunkten **addiert oder subtrahiert** wird.",
+        "- Haben die Jäger einen Vorsprung (ihre Gesamtpunkte sind höher als die des Hasen) und der Hase wirft das Ergebnis der Jäger, hat der Hase verloren (er ist ihnen 'in die Falle gegangen').",
+        "- Ein Pudel/Rinne zählt für alle 0 Punkte und kann gegebenenfalls eine Geldstrafe für die Kasse nach sich ziehen.",
+        "Ist das Spiel zu Ende, kann die Rolle des Hasen weitergegeben werden."
+    ],
+    "example": [
+        "**Hase 1. Wurf:** 8 Holz (Hasenpunkte: 8)",
+        "**Jäger 1. Wurf:** 6 Holz (Jägerpunkte: 6)",
+        "    *Jäger erreicht 8 nicht.*",
+        "**Hase 2. Wurf:** 7 Holz (Hasenpunkte: 8 + 7 = 15)",
+        "**Jäger 2. Wurf:** 9 Holz (Jägerpunkte: 6 + 9 = 15). Jäger hat Hasenpunktzahl erreicht, Hase ist erlegt!"
+    ],
+    "teamGame": true,
+    "duration": "~35 Min. mit 8 Spielern"
+    },
+    {
+    "id": "platte-putzen",
+    "title": "Platte putzen",
+    "goal": "Alle vorgegebenen Zahlen von der Tafel zu 'putzen' (auszuwischen). Gewinnt der Spieler oder die Mannschaft, die zuerst ihre Platte geputzt hat.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Legt fest, ob das Spiel als Einzelspiel oder paarweise (Mannschaften) gespielt wird.",
+        "Stellt den Kegelautomaten auf **Volle mit Kranzwertung**.",
+        "Schreibt für jeden Spieler bzw. jedes Spielerpaar die Zahlen **5, 6 und 7** an die Tafel. Haltet einen Schwamm bereit.",
+        "Bestimmt die Reihenfolge, in der gekegelt wird.",
+        "Pro Durchgang hat jeder Kegler / jedes Team **zwei Würfe in die Vollen**.",
+        "**Wenn eine gekegelte Zahl an der Tafel steht**, wird sie dort 'geputzt' (ausgewischt).",
+        "**Steht die geworfene Zahl nicht an der Tafel**, muss sie bei euch aufgeschrieben werden. Diese neu aufgeschriebene Zahl muss dann ebenfalls gekegelt werden, um sie zu 'putzen'.",
+        "Der **Kranz** ist ein Joker: Sobald ihr einen Kranz geworfen habt, könnt ihr euch eine **beliebige Zahl** aussuchen, um sie auszuwischen.",
+        "Sobald ein Spieler bzw. Team alle Zahlen geputzt hat, wird die aktuelle Runde noch zu Ende gespielt, um anderen Spielern (Spielerpaaren) die Chance zum Gleichziehen zu geben.",
+        "Ist die letzte Zahl mit dem **ersten** der beiden Würfe gefallen, haben die anderen Spieler auch nur noch einen Wurf zum Ausgleich.",
+        "Schaffen es mehrere Spieler / Spielerpaare gleichzeitig, die Platte zu putzen, kann der Sieger durch z.B. drei Würfe in die Vollen ausgekegelt werden."
+    ],
+    "example": [
+        "Ein Spieler hat noch die Zahlen 5 und 7 auf seiner Tafel.",
+        "**1. Wurf:** Der Spieler wirft 6 Holz. Da die 6 nicht auf der Tafel steht, muss er sie zusätzlich aufschreiben. Seine Tafel zeigt nun: 5, 6, 7.",
+        "**2. Wurf:** Der Spieler wirft 5 Holz. Er wischt die 5 von der Tafel. Seine Tafel zeigt nun: 6, 7.",
+        "Nächste Runde: Der Spieler hat noch 6 und 7 auf der Tafel.",
+        "**1. Wurf:** Der Spieler wirft einen Kranz. Er kann sich entscheiden, die 6 oder die 7 auszuwischen. Er wählt die 7.",
+        "**2. Wurf:** Der Spieler wirft 8 Holz. Die 8 steht nicht auf der Tafel, also muss er sie aufschreiben. Seine Tafel zeigt nun: 6, 8."
+    ],
+    "teamGame": true,
+    "duration": "~50 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Spielzeit reduzieren",
+        "description": "Um die Spielzeit zu verkürzen, kann eine **Rundenbegrenzung** festgelegt werden, z.B. auf 10 Durchgänge."
+        },
+        {
+        "name": "Kegelkasse",
+        "description": "Zur Aufbesserung der Kegelkasse kann eine Strafe vereinbart werden, z.B. **10 Cent pro Zahl**, die bei Spielende noch an der Tafel steht."
+        }
+    ]
+    },
+    {
+    "id": "las-vegas",
+    "title": "Las Vegas",
+    "goal": "Nach 6 Runden als 2er-Team die höchste Punktzahl zu erreichen, indem man Würfe präzise aneinander anpasst und das Risiko des Verlusts von Rundenpunkten und Halbierung der Vorrundenpunkte vermeidet.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Teilt eure Gruppe vor Spielbeginn in **2er-Teams** auf.",
+        "Legt die Kegelreihenfolge der Teams für die erste Runde fest.",
+        "Stellt den Kegelautomaten auf **Volle** (ohne Kranzwertung, da Pudel 0 Punkte zählt und andere Regeln für 'Kranz' hier nicht explizit genannt werden).",
+        "Das Spiel besteht aus insgesamt **6 Runden**.",
+        "Pro Team habt ihr **10 Würfe** für jeden Durchgang zur Verfügung. Wechselt euch beim Werfen ab.",
+        "Jedes Team muss in jedem Durchgang mindestens **2 Pflichtwürfe** kegeln.",
+        "Der **erste Kegler** des Teams startet mit seinem Wurf und legt das Ergebnis vor.",
+        "Der **zweite Kegler** des Teams darf mit seinem Wurf **maximal einen Punkt mehr oder einen Punkt weniger** als der Vorgänger werfen.",
+        "Nach den 2 Pflichtwürfen kann das Team entscheiden, ob es weiter wirft oder den Durchgang beendet und die Punkte sichert.",
+        "**Für alle folgenden Würfe** gilt weiterhin, dass sich das Ergebnis um maximal 1 Holz vom Vorgänger unterscheiden darf.",
+        "**Wertungstabelle:**",
+        "- **Folgewurf gleich hoch wie Vorgänger:** Die beiden Würfe werden **multipliziert**.",
+        "- **Folgewurf unterscheidet sich um +/- ein Holz vom Vorgänger:** Die beiden Würfe werden **addiert**.",
+        "- **Folgewurf unterscheidet sich um mehr als ein Holz vom Vorgänger:** Die Runde ist **sofort beendet und zählt null Punkte**. Zusätzlich wird die gesamte **Punktesumme aus den Vorrunden halbiert** (abgerundet, falls nicht genau teilbar).",
+        "Ein **Pudel/Rinne** zählt **0 Punkte**.",
+        "Wenn ein Durchgang beendet wird, werden die Punkte für diesen Durchgang gemäß der Wertungstabelle berechnet und zu den Punkten aus den vorherigen Runden addiert.",
+        "Nachdem alle Teams ihren Durchgang beendet haben, startet die nächste Runde.",
+        "In den folgenden Runden beginnt immer das Team mit der **höchsten Gesamtsumme** an der Tafel, danach das Team mit der zweithöchsten Summe usw."
+    ],
+    "example": [
+        "Team A hat aktuell 100 Punkte aus Vorrunden.",
+        "**Wurf 1 (Pflicht):** Spieler A1 wirft 6 Holz.",
+        "**Wurf 2 (Pflicht):** Spieler A2 wirft 5 Holz (unterschied sich um 1). Die Punkte aus diesen beiden Würfen werden addiert: 6 + 5 = 11.",
+        "Team entscheidet, weiter zu werfen.",
+        "**Wurf 3:** Spieler A1 wirft 5 Holz (gleich hoch). Der Wert des vorherigen Wurfs (5) wird mit dem aktuellen Wurf (5) multipliziert: 5 * 5 = 25.",
+        "Das Spiel wird fortgesetzt, indem der Wert des vorherigen Wurfes mit dem aktuellen Wurf entweder multipliziert oder addiert wird, je nach Regel. Die Summe der Werte aus diesem Durchgang wird am Ende zur Gesamtpunktzahl addiert.",
+        "**Rechenbeispiel:** Wenn die Würfe 6, 5, 5 gefallen sind: Der erste Wurf ist 6. Der zweite Wurf 5 (Differenz 1), also 6 + 5 = 11. Der dritte Wurf 5 (gleich dem zweiten Wurf), also 11 * 5 = 55. Die Rundensumme ist 55."
+    ],
+    "teamGame": true,
+    "duration": "~50 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Einzelspiel",
+        "description": "Anstatt in 2er-Teams zu spielen, kann 'Las Vegas' auch als **Einzelspiel** gespielt werden, wobei jeder Kegler die Regeln für sich selbst anwendet."
+        }
+    ]
+    },
+    {
+    "id": "verflixte-sechs",
+    "title": "Verflixte Sechs",
+    "goal": "Als erste Mannschaft 101 Punkte oder mehr zu erreichen, indem man Würfe strategisch sichert und das Risiko einer 'verflixten Sechs' minimiert.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Wählt zwei Mannschaften für das Spiel.",
+        "Stellt den Kegelautomaten auf **Volle** (Kranzwertung ist nicht explizit genannt und nicht relevant für die Punktzahl der Würfe selbst).",
+        "Jede Mannschaft versucht, als erste **101 Punkte oder mehr** zu erreichen.",
+        "Innerhalb der Mannschaft kegelt ihr nacheinander, um sicherzustellen, dass jeder einmal kegeln darf.",
+        "**Es gelten folgende Regeln pro Wurf:**",
+        "- **1 oder 2 Holz:** Ihr schreibt nur die bisherigen Punkte aus diesem Durchgang **ohne den letzten Wurf** auf. Die andere Mannschaft darf weitermachen.",
+        "- **3 Holz:** Die 3 Holz werden zu den bisherigen Punkten aus diesem Durchgang **addiert** und aufgeschrieben. Die andere Mannschaft darf weitermachen.",
+        "- **6 Holz:** **Alle Punkte** aus diesem laufenden Durchgang werden **verworfen**. Die andere Mannschaft darf weitermachen.",
+        "- **4, 5, 7, 8, 9 Holz:** Die Punkte zählen (werden zum laufenden Durchgang addiert). Die Mannschaft darf **entscheiden**, ob sie weiterkegeln will oder die Punkte sichern möchte. Werden die Punkte gesichert und aufgeschrieben, darf die andere Mannschaft kegeln."
+    ],
+    "example": [
+        "**Mannschaft A** hat 50 Gesamtpunkte. Aktueller Durchgang: 10 Punkte.",
+        "**Spieler A1** wirft 7 Holz. Aktueller Durchgang: 10 + 7 = 17 Punkte. Mannschaft A entscheidet, weiterzukegeln.",
+        "**Spieler A2** wirft 4 Holz. Aktueller Durchgang: 17 + 4 = 21 Punkte. Mannschaft A entscheidet, die Punkte zu sichern.",
+        "    *Gesamtpunkte Mannschaft A: 50 + 21 = 71 Punkte. Nun ist Mannschaft B an der Reihe.*",
+        "**Mannschaft B** hat 60 Gesamtpunkte. Aktueller Durchgang: 0 Punkte.",
+        "**Spieler B1** wirft 6 Holz. *Alle Punkte aus diesem Durchgang (0 + 6 = 6) werden verworfen.*",
+        "    *Gesamtpunkte Mannschaft B: 60 Punkte (bleiben unverändert). Nun ist Mannschaft A an der Reihe.*"
+    ],
+    "teamGame": true,
+    "duration": "~45 Min. mit 8 Spielern"
+    },
+    {
+    "id": "mannschafts-duell",
+    "title": "Mannschafts-Duell",
+    "goal": "Als Mannschaft die wenigsten Strafstriche am Ende des Spiels zu haben, indem man abwechselnd volle Bilder abräumt und Fehler vermeidet.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Vorbereitung:**",
+        "- Benötigt ein **Skat-Kartenspiel**. Wählt so viele Karten aus, wie es Mitspieler gibt, wobei immer ein rotes und ein schwarzes Kartenpärchen (z.B. Herz Dame und Pik Dame) vorhanden sein muss. Keine doppelten Pärchen! (Für mehr als 16 Spieler ist ein größeres Kartendeck nötig; bei ungerader Spielerzahl gibt es eine Einzelkarte ohne Äquivalent).",
+        "- Mischt die Karten gut und lasst jeden Kegler verdeckt eine Karte ziehen. Die Spieler behalten ihre Karten.",
+        "- Bildet zwei Mannschaften: Team **„Rot“** (alle roten Karten) und Team **„Schwarz“** (alle schwarzen Karten).",
+        "- Stellt den Kegelautomaten auf **Abräumen**.",
+        "**Spielablauf:**",
+        "- Die beiden Spieler mit den **höchsten Kartenwerten** treten zuerst gegeneinander an. (Kartenwerte von hoch nach niedrig: Ass, König, Dame, Bube, 10, 9, 8, 7).",
+        "- Die beiden Kontrahenten kegeln abwechselnd mit je einer Kugel auf das volle Bild zum Abräumen. **Schwarz beginnt**.",
+        "- **Wer zuerst abräumt, gewinnt** diese Runde für seine Mannschaft.",
+        "- Die unterlegene Mannschaft erhält **3 Strafstriche**.",
+        "- Anschließend ist das nächste Pärchen mit der nächst niedrigeren Karte an der Reihe. **Rot beginnt** nun diesen neuen Abräumversuch auf ein volles Bild, und so weiter.",
+        "**Zusätzliche Regeln:**",
+        "- **Trifft ein Kegler keinen Kegel** (Pudel/Rinne eingeschlossen), erhält **seine Mannschaft so viele Strafstriche, wie Kegel noch stehen** (also 9 Strafstriche bei einem Fehlwurf auf ein volles Bild).",
+        "- Nach einem Fehlwurf des einen Keglers hat der andere Kegler noch einen Wurf, um das Bild abzuräumen. Gelingt ihm das, bekommt die Mannschaft des fehlwerfenden Keglers nochmals **drei zusätzliche Strafstriche**.",
+        "- Gelingt ihm das Abräumen nicht, werden keine weiteren Strafstriche aufgeschrieben, und das nächste Pärchen ist an der Reihe.",
+        "- Gibt es einen **Einzelspieler** in einem Team (bei ungerader Spielerzahl), so zieht dieser aus dem Kartendeck der gegnerischen Mannschaft eine Karte, gegen deren Spieler er antritt.",
+        "- Normalerweise wird ein kompletter Durchgang (alle Paare spielen einmal) gespielt. Es können auch mehrere Durchgänge festgelegt werden, wobei es mehr Spaß macht, die Karten neu zu mischen und neu zu verteilen, um neue Mannschaftskombinationen zu bilden.",
+        "- Gewonnen hat am Ende das Team mit den **wenigsten Strafstrichen**."
+    ],
+    "example": [
+        "Team Rot (Herz Dame) vs. Team Schwarz (Pik Dame)",
+        "Pik Dame (Schwarz) beginnt. Wirft 7 Holz.",
+        "Herz Dame (Rot) wirft 9 Holz (räumt ab).",
+        "Team Schwarz bekommt 3 Strafstriche. Nächstes Paar ist an der Reihe, beginnend mit Rot.",
+        "",
+        "Anderes Beispiel:",
+        "Team Rot (Herz König) vs. Team Schwarz (Pik König)",
+        "Pik König (Schwarz) beginnt. Wirft 0 Holz (Pudel).",
+        "Team Schwarz bekommt 9 Strafstriche (für die 9 stehenden Kegel).",
+        "Herz König (Rot) hat noch einen Wurf. Wirft 9 Holz (räumt ab).",
+        "Team Schwarz bekommt weitere 3 Strafstriche (insgesamt 12 Striche in dieser Runde). Nächstes Paar ist an der Reihe, beginnend mit Rot."
+    ],
+    "teamGame": true,
+    "duration": "~25 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Kegelkasse",
+        "description": "Jeder Kegler aus der Verlierermannschaft zahlt **1 Cent pro Strafstrich** in die Kegelkasse. Der Betrag wird auf den nächsten Zehner aufgerundet (z.B. 16 Strafstriche = 20 Cent pro Person)."
+        }
+    ]
+    },
+    {
+    "id": "ungrade",
+    "title": "Ungrade",
+    "goal": "Als erste Mannschaft 100 Punkte oder mehr zu erreichen, indem nur gerade Holzzahlen geworfen werden. Ungerade Würfe beenden den Durchgang der Mannschaft.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Teilt eure Kegelgruppe in **zwei Mannschaften** auf.",
+        "Stellt euren Kegelautomaten auf **Volle mit Kranzwertung** ein.",
+        "Die **erste Mannschaft** beginnt, und ihre Spieler werfen immer abwechselnd auf ein volles Bild.",
+        "Jede Mannschaft darf so lange weiterkegeln, **bis eine ungerade Holzzahl fällt**.",
+        "Fällt eine ungerade Zahl, wird nicht mehr weitergeworfen. Die bis dahin gesammelten geraden Holzpunkte werden als Punkte aufgeschrieben. Das ungerade Ergebnis selbst wird **nicht** mit aufgeschrieben.",
+        "Anschließend ist die **andere Mannschaft** an der Reihe und kegelt nach denselben Regeln, bis auch bei ihr eine ungerade Anzahl an Kegeln fällt, und so weiter.",
+        "Das Kegelspiel endet, sobald eine Mannschaft **100 Punkte oder mehr** geworfen hat.",
+        "Erreicht die Startmannschaft zuerst ihre 100 Punkte, darf die andere Mannschaft noch einmal nachwerfen und hat so die Chance, auszugleichen.",
+        "Schafft es eine Mannschaft in ihrem letzten Durchgang auszugleichen, wird der Gewinner mit je einem Wurf in die **Vollen** pro Mannschaftsmitglied ausgekegelt. Die Mannschaft mit der höheren Gesamtpunktzahl dieser Entscheidungsrunde gewinnt."
+    ],
+    "example": [
+        "**Mannschaft A** hat 0 Punkte. Spieler A1 wirft 8 Holz. Aktueller Durchgang: 8 Punkte.",
+        "Spieler A2 wirft 6 Holz. Aktueller Durchgang: 8 + 6 = 14 Punkte.",
+        "Spieler A3 wirft 5 Holz (ungerade!).",
+        "    *Die 5 wird nicht gezählt. Mannschaft A beendet ihren Durchgang mit 14 Punkten. Der Gesamtpunktestand von Mannschaft A ist nun 14. Mannschaft B ist an der Reihe.*",
+        "**Mannschaft B** hat 0 Punkte. Spieler B1 wirft 7 Holz (ungerade!).",
+        "    *Die 7 wird nicht gezählt. Mannschaft B beendet ihren Durchgang mit 0 Punkten. Der Gesamtpunktestand von Mannschaft B ist nun 0. Mannschaft A ist an der Reihe.*"
+    ],
+    "teamGame": true,
+    "duration": "~42 Min. mit 8 Spielern"
+    },
+    {
+    "id": "steigrohr",
+    "title": "Steigrohr",
+    "goal": "Als Zweierpaar die meisten Gesamtpunkte zu erzielen, indem in jeder neuen Runde mehr Holz geworfen wird als in der Vorrunde.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "Bildet **Paare**, die als Teams gegeneinander spielen.",
+        "Stellt den Kegelautomaten auf **Volle mit Kranzwertung**.",
+        "Jedes Paar hat **2 Würfe pro Runde** in die Vollen.",
+        "Das Ziel ist es, in jeder neuen Runde **mehr Holz zu werfen als in der Runde zuvor**. Beginnt am besten mit einer möglichst niedrigen Holzzahl, um Steigerungen leichter zu ermöglichen.",
+        "**Punktewertung:**",
+        "- Die Ergebnisse pro Runde werden nur aufgeschrieben, **wenn sie höher sind als das Ergebnis der Vorrunde**.",
+        "- Ein **Pudel/Rinne** wird mit **5 Holz** gewertet.",
+        "- Ein **Kranz** zählt **12 Punkte**.",
+        "Schafft es ein Paar nicht, ihre Vorrunde zu übertreffen (d.h., sie werfen gleich viel oder weniger Holz), ist das Spiel für dieses Paar beendet. Die anderen Paare kegeln weiter.",
+        "Wenn kein Paar mehr eine Steigerung erreichen konnte, werden die Ergebnisse aller erfolgreichen Durchgänge jedes Paares summiert.",
+        "Das Kegelpaar mit den **meisten Gesamtpunkten** ist das Siegerpaar."
+    ],
+    "example": [
+        "**Runde 1:** Paar A wirft 6 Holz. Aktueller Stand Paar A: 6 Punkte.",
+        "**Runde 2:** Paar A muss nun mehr als 6 Holz werfen.",
+        "  - Paar A wirft 8 Holz. Aktueller Stand Paar A: 6 (Runde 1) + 8 (Runde 2) = 14 Punkte.",
+        "**Runde 3:** Paar A muss nun mehr als 8 Holz werfen.",
+        "  - Paar A wirft 7 Holz. *7 ist nicht mehr als 8. Das Spiel ist für Paar A beendet.*",
+        "**Beispiel für Kranz/Pudel:**",
+        "**Runde 1:** Paar B wirft einen Kranz (12 Holz). Aktueller Stand Paar B: 12 Punkte.",
+        "**Runde 2:** Paar B muss nun mehr als 12 Holz werfen.",
+        "  - Paar B wirft einen Pudel (5 Holz). *5 ist nicht mehr als 12. Das Spiel ist für Paar B beendet.*"
+    ],
+    "teamGame": true,
+    "duration": "~28 Min. mit 8 Spielern"
+    },
+    {
+    "id": "haus-vom-nikolaus",
+    "title": "Haus vom Nikolaus",
+    "goal": "Als Mannschaft (oder Einzelspieler) in drei Runden möglichst viele komplette 'Nikolaushäuser' zu bauen und die meisten Punkte zu erzielen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Teilt eure Kegelgruppe in gleichstarke Mannschaften auf (nicht mehr als 5 Kegler pro Mannschaft).",
+        "- Stellt den Kegelautomaten auf **Volle**.",
+        "- Bereitet eine Tafel oder Papier vor, um die 'Häuser vom Nikolaus' zu zeichnen. Jedes Haus besteht aus **8 Strichen**:",
+        "  - **4 waagerechte oder senkrechte Striche** (Seitenwände, Boden, Decke)",
+        "  - **4 diagonale/schräge Striche** (Dach und das 'X' in der Mitte)",
+        "**Spielanleitung (Mannschaftsspiel):**",
+        "- Das Spiel wird in **drei Runden** gespielt.",
+        "- Jeder Mannschaftskegler hat pro Runde **3 Würfe in die Vollen**.",
+        "- **Wirft ein Kegler eine gerade Kegelzahl**, wird ein **waagerechter oder senkrechter Strich** im Haus eingezeichnet.",
+        "- **Fällt eine ungerade Zahl an Kegeln**, wird ein **diagonaler Strich** gezeichnet.",
+        "- Die Reihenfolge, in der die Striche eingezeichnet werden, ist egal.",
+        "- Bei einem **Pudel/Rinne** wird kein Strich gezeichnet, der Wurf ist verloren und wird nicht wiederholt.",
+        "- Erst wenn ein Haus fertig (alle 8 Striche gezeichnet) ist, darf die Mannschaft ihr nächstes Haus beginnen.",
+        "- Sind alle Spieler der Mannschaft mit ihren drei Würfen durch, ist die nächste Mannschaft an der Reihe.",
+        "- Nach insgesamt drei Runden ist das Spiel beendet.",
+        "**Punktezählung (Mannschaftsspiel):**",
+        "- Für jedes **vollständige Haus**: (Anzahl der erzielten Striche) * (Anzahl des Hauses).",
+        "  - Beispiel: Für das 1. Haus *1, für das 2. Haus *2, für das 3. Haus *3, usw.",
+        "- Für ein **unvollständiges Haus**: Die Anzahl der gezeichneten Striche wird noch zu den vorherigen Ergebnissen addiert.",
+        "- Gewonnen hat die Mannschaft mit den **meisten Gesamtpunkten**."
+    ],
+    "example": [
+        "**Mannschaft A** hat nach zwei Runden ein komplettes Haus (8 Striche) und ein weiteres unvollständiges Haus mit 5 Strichen gebaut.",
+        "**Berechnung:** (8 Striche * 1. Haus) + (5 Striche aus dem unvollständigen Haus) = 8 + 5 = 13 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "~35 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Einzelspielervariante",
+        "description": "Jeder Spieler baut sein eigenes Haus vom Nikolaus. Ein Strich darf nur gezeichnet werden, wenn eine **gerade** Anzahl an Kegeln geworfen wurde. Jeder Spieler darf so lange weiterkegeln, bis eine **ungerade** Zahl fällt; dann ist der nächste Kegler an der Reihe. **Wird eine 3 geworfen, muss ein Bauteil vom Haus wieder entfernt werden.** Wer zuerst das Haus mit 8 Bauteilen fertiggestellt hat, hat gewonnen. Die anderen Spieler dürfen die Runde noch beenden und versuchen auszugleichen."
+        }
+    ]
+    },
+    {
+    "id": "fussball",
+    "title": "Fußball",
+    "goal": "Als erste Mannschaft mindestens 5 Tore zu erzielen und dabei einen Vorsprung von 2 Toren vor dem Gegner zu haben.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Bildet zwei Mannschaften und lost aus, welche Mannschaft beginnen darf.",
+        "- Legt in jeder Mannschaft eine Kegelreihenfolge fest.",
+        "- Stellt den Kegelautomaten auf **Abräumen**.",
+        "**Spielanleitung:**",
+        "- Die Startmannschaft beginnt, und die Kegler der Mannschaft werfen reihum auf das Kegelbild, bis entweder abgeräumt wurde ('Tor') oder kein Holz getroffen wurde ('Aus'). In beiden Fällen ist danach die gegnerische Mannschaft am Ball.",
+        "- **Tor! (Abgeräumt):**",
+        "  - Die Mannschaft erhält einen **Torstrich**.",
+        "  - Danach bekommt die nachfolgende Mannschaft ein **volles Bild** und muss versuchen, abzuräumen.",
+        "- **Aus! (Nicht abgeräumt, aber auch kein Pudel):**",
+        "  - Die nachfolgende Mannschaft muss versuchen, das **noch stehende Bild abzuräumen**.",
+        "  - Schafft die Mannschaft, das Bild abzuräumen und somit ein Tor zu schießen, bekommt die andere Mannschaft wieder ein volles Bild.",
+        "  - Schafft die Mannschaft es nicht, muss die ursprünglich am Ball befindliche Mannschaft wieder versuchen, das Bild abzuräumen, und so weiter, bis ein Tor fällt oder ein Elfmeter ausgelöst wird.",
+        "- **Elfmeter (Pudel/Rinne):**",
+        "  - Wirft ein Spieler einen Pudel/Rinne, erhält die **gegnerische Mannschaft einen Elfmeter**.",
+        "  - Für den Elfmeter werden die **beiden Bauern und die beiden Hinterdamen** (siehe 'Fußballtor') aufgestellt. Ein Kegler der Mannschaft, die den Elfmeter zugesprochen bekommen hat, darf nun versuchen, **durch die Gasse zu werfen** und somit ein Tor zu schießen.",
+        "  - Schafft er es, erhält seine Mannschaft einen **Torstrich**.",
+        "  - **Egal ob der Kegler ein Tor geschossen hat oder der Schuss daneben ging**, seine Mannschaft darf anschließend wieder auf ein **volles Bild** kegeln (die Elfmeter-Mannschaft bleibt also am Ball).",
+        "- **Gewinner des Spiels** ist die Mannschaft, die als Erstes **mindestens 5 Tore** erzielt hat **und zwei Tore Vorsprung** vor der anderen Mannschaft hat."
+    ],
+    "example": [
+        "**Mannschaft A** beginnt mit einem leeren Tor.",
+        "Spieler A1 wirft 9 Holz (Abräumen). **Tor für Mannschaft A.** (Stand: A:1, B:0)",
+        "Jetzt ist **Mannschaft B** am Zug, erhält ein volles Bild.",
+        "Spieler B1 wirft 7 Holz.",
+        "Spieler B2 wirft 0 Holz (Pudel!). **Elfmeter für Mannschaft A.**",
+        "Mannschaft A wählt einen Schützen für den Elfmeter. Der Schütze wirft durch die Bauern und Hinterdamen und trifft. **Tor für Mannschaft A.** (Stand: A:2, B:0)",
+        "Mannschaft A bleibt am Ball, erhält ein volles Bild. Spieler A2 wirft 9 Holz. **Tor für Mannschaft A.** (Stand: A:3, B:0)",
+        "Mannschaft B ist am Zug, erhält ein volles Bild..."
+    ],
+    "teamGame": true,
+    "duration": "~50 Min. mit 8 Spielern"
+    },
+    {
+    "id": "mixed-partie",
+    "title": "Mixed Partie",
+    "goal": "Als Mannschaft oder Einzelspieler durch vier unterschiedliche Runden die höchste Gesamtpunktzahl zu erreichen.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Teilt eure Gruppe in zwei möglichst gleich starke Mannschaften auf (für Mannschaftsspiel).",
+        "- Stellt den Kegelautomaten für die erste Runde auf **Volle ohne Kranzwertung**. Der Automat muss in den folgenden Runden umgestellt werden.",
+        "---",
+        "## Spielanleitung Mannschaftsspiel",
+        "Insgesamt werden **vier Runden** mit unterschiedlichen Aufgaben gekegelt. Pro Runde hat jeder Kegler einer Mannschaft **einen Wurf**.",
+        "**Runde 1 (in die Vollen):**",
+        "- Jeder Kegler hat einen Wurf in die Vollen.",
+        "- Die Wurfergebnisse pro Mannschaft werden **addiert**.",
+        "**Runde 2 (Abräumen):**",
+        "- Stellt den Kegelautomaten auf **Abräumen**.",
+        "- Jeder Kegler hat einen Wurf zum Abräumen.",
+        "- Die Ergebnisse (gefallene Holz) pro Mannschaft werden **addiert**.",
+        "- Schafft es die Mannschaft abzuräumen, wird das Bild neu gestellt, und die anderen Mannschaftsmitglieder kegeln weiter.",
+        "**Runde 3 (in die Vollen - Hohe Hausnummer):**",
+        "- Stellt den Kegelautomaten auf **Volle**.",
+        "- Jeder Kegler hat einen Wurf in die Vollen.",
+        "- Ziel ist es, möglichst **hohe Zahlen** zu kegeln.",
+        "- Die Zahlen werden in der Reihenfolge aufgeschrieben, in der gekegelt wurde. Die Stellen der Hausnummer entsprechen der Anzahl der Kegler (z.B. bei 4 Keglern eine 4-stellige Zahl). Ihr beginnt, die Zahl von hinten her aufzuschreiben (der erste Wurf ist die letzte Ziffer, der zweite Wurf die vorletzte usw.).",
+        "- Ein **Pudel/Rinne** wird als **'0'** aufgeschrieben, ein **Kranz** als **'8'**.",
+        "- Die gebildete Hausnummer wird später zum Gesamtergebnis **addiert**.",
+        "**Runde 4 (in die Vollen - Niedrige Hausnummer):**",
+        "- Stellt den Kegelautomaten auf **Volle**.",
+        "- Jeder Kegler hat einen Wurf in die Vollen.",
+        "- Ziel ist es, möglichst **niedrige Zahlen** zu kegeln.",
+        "- Die Zahlen werden in der Reihenfolge aufgeschrieben, in der gekegelt wurde. Die Stellen der Hausnummer entsprechen der Anzahl der Kegler. Ihr beginnt, die Zahl von hinten her aufzuschreiben (der erste Wurf ist die letzte Ziffer, der zweite Wurf die vorletzte usw.).",
+        "- Ein **Pudel/Rinne** wird als **'9'** aufgeschrieben, ein **Kranz** als **'8'**.",
+        "- Die gebildete Hausnummer wird später vom Gesamtergebnis **subtrahiert**.",
+        "**Gewinner:** Addiert alle Ergebnisse der vier Runden (Runde 1 + Runde 2 + Hausnummer Runde 3 - Hausnummer Runde 4). Die Mannschaft mit der höchsten Gesamtpunktzahl gewinnt.",
+        "---",
+        "## Spielanleitung Einzelspiel",
+        "Jeder Kegler spielt für sich selbst.",
+        "**Runde 1 (in die Vollen):**",
+        "- Jeder Kegler hat **fünf Würfe** in die Vollen.",
+        "- Die einzelnen Ergebnisse jedes Wurfs werden **addiert**.",
+        "**Runde 2 (Abräumen):**",
+        "- Jeder Kegler hat **fünf Würfe** zum Abräumen.",
+        "- Die gefallenen Holz werden **addiert**.",
+        "**Runde 3 (in die Vollen - Hohe Hausnummer):**",
+        "- Jeder Kegler hat **zwei Würfe** in die Vollen.",
+        "- Ziel ist es, möglichst **hohe Zahlen** zu kegeln.",
+        "- Der Kegler darf beim ersten Wurf entscheiden, an welche der **beiden Stellen** die Zahl geschrieben wird (z.B. als Zehner- oder Einerstelle einer zweistelligen Zahl).",
+        "- Ein **Pudel/Rinne** wird als **'0'** aufgeschrieben.",
+        "- Die gebildete große Hausnummer wird später zum Gesamtergebnis **addiert**.",
+        "**Runde 4 (in die Vollen - Niedrige Hausnummer):**",
+        "- Jeder Kegler hat **zwei Würfe** in die Vollen.",
+        "- Ziel ist es, möglichst **niedrige Zahlen** zu kegeln.",
+        "- Der Kegler darf beim ersten Wurf entscheiden, an welche der **beiden Stellen** die Zahl geschrieben wird (als Zehner- oder Einerstelle).",
+        "- Die Zahlen werden in der Reihenfolge aufgeschrieben, in der sie gekegelt wurden (wenn es auf die Bildung einer Zahl ankommt).",
+        "- Ein **Pudel/Rinne** wird als **'9'** aufgeschrieben.",
+        "- Die gebildete kleine Hausnummer wird später vom Gesamtergebnis **subtrahiert**.",
+        "**Gewinner:** Addiert alle Ergebnisse der vier Runden (Runde 1 + Runde 2 + Hausnummer Runde 3 - Hausnummer Runde 4). Der Spieler mit der höchsten Gesamtpunktzahl gewinnt."
+    ],
+    "example": [
+        "**Mannschaftsspiel - Runde 3 (Hohe Hausnummer) mit 4 Keglern:**",
+        "Spieler 1 wirft 7 Holz (Einerstelle).",
+        "Spieler 2 wirft 5 Holz (Zehnerstelle).",
+        "Spieler 3 wirft 9 Holz (Hunderterstelle).",
+        "Spieler 4 wirft 6 Holz (Tausenderstelle).",
+        "Die Hausnummer ist 6957. Diese wird zum Gesamtergebnis addiert.",
+        "---",
+        "**Einzelspiel - Runde 3 (Hohe Hausnummer) mit 2 Würfen:**",
+        "Spieler wirft 8 Holz. Er entscheidet, die 8 auf die Zehnerstelle zu setzen.",
+        "Spieler wirft 3 Holz. Er setzt die 3 auf die Einerstelle.",
+        "Die Hausnummer ist 83. Diese wird zum Gesamtergebnis addiert."
+    ],
+    "teamGame": true,
+    "duration": "~35 Min. mit 8 Spielern"
+    },
+    {
+    "id": "gerade-ungerade",
+    "title": "Gerade & Ungerade",
+    "goal": "Als Mannschaft die meisten Punkte über zwei Runden zu sammeln, indem in der ersten Runde nur gerade und in der zweiten Runde nur ungerade (oder umgekehrt) Holzzahlen geworfen werden.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Stellt den Kegelautomaten auf **Volle mit Kranzwertung**.",
+        "- Teilt eure Kegelgruppe in **zwei Mannschaften** auf.",
+        "- Bereitet eine Tafel für den Tafelanschrieb vor, indem ihr die beiden Mannschaften in Tabellenform notiert.",
+        "- Hat eine Mannschaft einen Kegler zu wenig, erhält sie den **'Blinden'**: Die verbleibenden Mitglieder der Mannschaft dürfen immer abwechselnd für die fehlende Person einspringen und kegeln.",
+        "**Spielanleitung:**",
+        "- Das Spiel besteht aus **zwei Runden** (Hin- und Rückrunde).",
+        "- **Runde 1 (Hinrunde):**",
+        "  - Die Kegler der **ersten Mannschaft** werfen reihum je einen Wurf in die Vollen. Sie dürfen dabei **nur gerade Ergebnisse** werfen.",
+        "  - Die Kegler der **zweiten Mannschaft** werfen ebenfalls reihum je einen Wurf in die Vollen. Sie dürfen dabei **nur ungerade Ergebnisse** werfen.",
+        "  - **Wirft ein Kegler nicht die geforderte Zahlenvariante (gerade/ungerade)**, dürfen seine Punkte für die Mannschaft **nicht aufgeschrieben** werden (der Wurf zählt 0 Punkte für das Team).",
+        "  - Nachdem die erste Mannschaft mit ihren Würfen durch ist, ist das zweite Team an der Reihe. Danach endet die erste Runde.",
+        "- **Runde 2 (Rückrunde):**",
+        "  - Die Anforderungen werden gewechselt: Die **erste Mannschaft** muss nun **ungerade Ergebnisse** werfen.",
+        "  - Die **zweite Mannschaft** muss nun **gerade Ergebnisse** werfen.",
+        "  - Die Regeln für das Notieren der Punkte (nur bei korrekter Zahlenvariante) bleiben bestehen.",
+        "**Gewinner:**",
+        "- Das Team mit den **meisten Gesamtpunkten** nach beiden Runden gewinnt."
+    ],
+    "example": [
+        "**Runde 1:**",
+        "  - **Team A (Muss gerade werfen):**",
+        "    - Spieler A1 wirft 6 Holz. Punkte für A: 6",
+        "    - Spieler A2 wirft 5 Holz. Punkte für A: 6 (5 zählt nicht)",
+        "  - **Team B (Muss ungerade werfen):**",
+        "    - Spieler B1 wirft 7 Holz. Punkte für B: 7",
+        "    - Spieler B2 wirft 4 Holz. Punkte für B: 7 (4 zählt nicht)",
+        "**Ende Runde 1:** Team A: 6 Punkte, Team B: 7 Punkte",
+        "**Runde 2:**",
+        "  - **Team A (Muss ungerade werfen):**",
+        "    - Spieler A1 wirft 3 Holz. Punkte für A: 6 + 3 = 9",
+        "    - Spieler A2 wirft 8 Holz. Punkte für A: 9 (8 zählt nicht)",
+        "  - **Team B (Muss gerade werfen):**",
+        "    - Spieler B1 wirft 2 Holz. Punkte für B: 7 + 2 = 9",
+        "    - Spieler B2 wirft 9 Holz. Punkte für B: 9 (9 zählt nicht)",
+        "**Ende Spiel:** Team A: 9 Punkte, Team B: 9 Punkte. (In diesem Fall wäre es ein Unentschieden, oder es müsste eine Stichrunde geben, falls nicht anders vereinbart.)"
+    ],
+    "teamGame": true,
+    "duration": "~16 Min. mit 8 Spielern"
+    },
+    {
+    "id": "meuchelmord",
+    "title": "Meuchelmord (Mordkegeln)",
+    "goal": "Als Mannschaft zuerst alle zugelosten Kegel der gegnerischen Spieler 'meucheln' (umwerfen).",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Wählt zwei Mannschaften. Falls keine Mannschaftskapitäne zuvor bestimmt wurden, könnt ihr einfach abwechselnd nach der Tischreihenfolge die Spieler zuordnen.",
+        "- Lost die **Startmannschaft** aus.",
+        "- **Lost jedem Kegler einen Kegel zu.** Schreibt dazu die Nummern der neun Kegel auf kleine Zettel und lasst die Kegler ziehen, oder verwendet eine konfigurierbare Würfel-App. Der zugeloste Kegel stellt das 'Leben' jedes Spielers dar. Notiert, welcher Kegel zu welchem Spieler gehört.",
+        "- Stellt den Kegelautomaten auf **Abräumen** (obwohl das Spiel auf ein volles Bild geworfen wird, ist der Fokus auf dem Umwerfen spezifischer Kegel, was der Abräum-Einstellung entspricht, um die Kegel nach jedem Wurf wieder aufzustellen, wenn nicht alle gefallen sind).",
+        "**Spielanleitung:**",
+        "- Es wirft immer abwechselnd je ein Kegler der Mannschaften auf das **volle Kegelbild**.",
+        "- Die Spieler, deren **zugeloster Kegel gefallen ist**, wurden 'ermordet' und **scheiden aus dem Spiel aus**.",
+        "- Achtet auf **Präzision**, damit ihr nicht aus Versehen die zugelosten Kegel eurer eigenen Mannschaft umwerft!",
+        "- Hat ein Kegler seinen Wurf beendet, ist der **nächste noch 'lebende' Kegler aus der gegnerischen Mannschaft** an der Reihe.",
+        "- **Sieger** ist die Mannschaft, die zuerst alle Gegner 'gemeuchelt' hat (d.h., alle zugelosten Kegel der gegnerischen Mannschaft wurden umgeworfen)."
+    ],
+    "example": [
+        "**Mannschaft A:** Spieler A1 (Kegel 3), Spieler A2 (Kegel 7), Spieler A3 (Kegel 5)",
+        "**Mannschaft B:** Spieler B1 (Kegel 2), Spieler B2 (Kegel 4), Spieler B3 (Kegel 8)",
+        "**Startmannschaft:** Team A",
+        "**Spieler A1** wirft. Es fallen Kegel 2, 3, 5.",
+        "  - Spieler A1 (Kegel 3) ist 'ermordet' (eigener Kegel gefallen!).",
+        "  - Spieler B1 (Kegel 2) ist 'ermordet'.",
+        "  - Spieler A3 (Kegel 5) ist 'ermordet'.",
+        "**Nächster Wurf:** Spieler B2 (der nächste noch lebende Spieler von Team B)."
+    ],
+    "teamGame": true,
+    "duration": "~10 Min. mit 8 Spielern"
+    },
+    {
+    "id": "buergermeister",
+    "title": "Bürgermeister",
+    "goal": "Als Mannschaft die höchste Gesamtpunktzahl über 5 Runden zu erzielen, indem der Bürgermeisterkandidat die Reihenfolge der Spieler strategisch festlegt, um beim Abräumen die meisten Punkte zu sammeln.",
+    "imageUrl": "",
+    "scoringInstructions": [
+        "**Spielvorbereitung:**",
+        "- Stellt den Kegelautomaten zuerst auf **Volle mit Kranzwertung**.",
+        "- Lasst jeden Kegler einmal auf die Vollen werfen.",
+        "- Die **zwei Spieler mit der höchsten Punktzahl** sind die **Bürgermeisterkandidaten**. Schreibt ihre Namen jeweils links und rechts an die Tafel.",
+        "- Bei Gleichstand unter potenziellen Kandidaten, werfen diese erneut auf die Vollen, bis genau zwei Kandidaten feststehen.",
+        "- Anschließend wählen die beiden Bürgermeisterkandidaten **abwechselnd** ihre **Wahlhelferteams** (ihre Mannschaften). Schreibt die Mitglieder unter den jeweiligen Kandidaten an die Tafel.",
+        "- Hat ein Team weniger Kegler, muss der Kandidat selbst zusätzliche Würfe übernehmen, um die gleiche Anzahl von Würfen pro Runde wie das andere Team zu gewährleisten.",
+        "- Stellt den Kegelautomaten danach auf **Abräumen** und aktiviert die **Kranzwertung**.",
+        "**Spielanleitung:**",
+        "- Das Spiel wird über **5 Runden** gekegelt.",
+        "- In jeder Runde hat jeder Spieler einer Mannschaft **einen Wurf**.",
+        "- Die **erste Mannschaft** beginnt.",
+        "- Der **Bürgermeisterkandidat bestimmt**, wer aus seinem Team **wann an der Reihe ist**. Dies ermöglicht es, die Stärken des Teams optimal einzusetzen, um möglichst viele Punkte zu sammeln.",
+        "- **Wird abgeräumt**, bekommt die Mannschaft ein **neues volles Bild**, und die weiteren Mannschaftsmitglieder können weiterkegeln, bis jeder einmal in dieser Runde geworfen hat.",
+        "- Hat jeder aus der ersten Mannschaft geworfen, ist das nächste Team an der Reihe.",
+        "- **Punktezählung:**",
+        "  - Die geworfenen Punkte (Anzahl der gefallenen Kegel beim Abräumen) werden jeweils mit der **aktuellen Rundennummer multipliziert**.",
+        "  - Beispiel: Für die erste Runde gibt es einfache Punkte (Holz x 1), für die fünfte Runde gibt es die fünffache Punktzahl (Holz x 5).",
+        "  - Ein **Kranz** zählt **12 Punkte** (und wird ebenfalls mit der Rundenzahl multipliziert: 12 x Rundenzahl).",
+        "  - Ein **Pudel / Rinne** zählt **0 Punkte**.",
+        "- **Gewinner**, also 'Bürgermeister', ist der Kandidat, dessen Team am Ende die **höchste Gesamtpunktzahl** erreicht hat."
+    ],
+    "example": [
+        "**Mannschaft A** (Bürgermeister B1) vs. **Mannschaft B** (Bürgermeister B2)",
+        "**Runde 1:**",
+        "  - **Team A:** Bürgermeister B1 bestimmt die Reihenfolge. Spieler A1 wirft 8 Holz. Spieler A2 wirft 9 Holz (Abräumen). Neues Bild für A3. Spieler A3 wirft 7 Holz.",
+        "  - Gesamtpunkte Team A in Runde 1: (8 + 9 + 7) * 1 = 24 Punkte.",
+        "**Runde 3:**",
+        "  - **Team B:** Bürgermeister B2 bestimmt die Reihenfolge. Spieler B1 wirft einen Kranz. (12 Punkte). Spieler B2 wirft 6 Holz. Spieler B3 wirft 0 Holz (Pudel).",
+        "  - Gesamtpunkte Team B in Runde 3: (12 + 6 + 0) * 3 = 18 * 3 = 54 Punkte."
+    ],
+    "teamGame": true,
+    "duration": "~45 Min. mit 8 Spielern",
+    "variants": [
+        {
+        "name": "Spielzeit anpassen",
+        "description": "Die **Rundenzahl kann verkürzt oder erhöht** werden, je nach Größe der Mannschaften und gewünschter Spielzeit. Legt die Zahl (zwischen 3 und 6 Runden) vor Spielbeginn fest."
+        },
+        {
+        "name": "Kegelkasse",
+        "description": "Zur Aufbesserung der Kegelkasse kann eine **Strafzahlung für das Verliererteam** festgelegt werden, z.B. 50 Cent pro Spieler."
+        }
+    ]
+    }
+]
