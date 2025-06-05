@@ -1,8 +1,11 @@
 // lib/main.dart
+import 'dart:developer';
+
 import 'package:claudiskegelapp/utils/routes.dart';
 import 'package:claudiskegelapp/viewmodels/user_viewmodel.dart';
 import 'package:claudiskegelapp/views/screens/appointment_screen.dart';
 import 'package:claudiskegelapp/views/screens/userprofile_screen.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -16,11 +19,12 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   FirebaseAuth.instance.setLanguageCode('de');
-  await dotenv.load(fileName: '.env');
+  log('Firebase Messaging Token: ${await FirebaseMessaging.instance.getToken()}');
 
   // Initialize AuthViewModel early
   final authViewModel = AuthViewModel();
