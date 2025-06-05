@@ -44,13 +44,14 @@ class AppTextStyles {
   
   static const TextStyle body = TextStyle(
     fontSize: 16.0,
+    color: AppColors.textSecondary,
   );
   
   static const TextStyle buttonText = TextStyle(
     fontSize: 16.0,
     fontWeight: FontWeight.bold,
     letterSpacing: 1.2,
-    color: Colors.white,
+    color: AppColors.textSecondary,
   );
   
   static const TextStyle caption = TextStyle(
