@@ -33,7 +33,7 @@ class _AuthScreenState extends State<AuthScreen> {
     return Scaffold(
       backgroundColor: AppColors.primaryColor, // Verwende den lila Modus-Hintergrund
       appBar: AppBar(
-        title: Text(AppStrings.appName, style: AppTextStyles.purpleHeading),
+        title: Text(AppStrings.appName, style: AppTextStyles.heading),
         backgroundColor: AppColors.primaryColor,
         foregroundColor: AppColors.lightGrey,
         elevation: 0,
