@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../styles/constants.dart';
 import '../../viewmodels/user_viewmodel.dart';
-import '../shared/ui_widgets.dart';
 import '../shared/card_widgets.dart';
 
 class UserProfileScreen extends StatelessWidget {

@@ -1,4 +1,3 @@
-import 'package:claudiskegelapp/utils/routes.dart';
 import 'package:claudiskegelapp/viewmodels/auth_viewmodel.dart';
 import 'package:claudiskegelapp/views/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
