@@ -1,39 +1,35 @@
 import 'package:uuid/uuid.dart';
 
-enum AttendanceStatus { accepted, declined, pending }
+
 
 class Appointment {
-  final String id;
-  final String title;
-  final DateTime startTime;
-  final DateTime endTime;
-  final String location;
-  final List<String> attendees;
+  late final String id;
+  String title; 
+  DateTime start;
+  String? locationId;
+  List<String> attendees; // List of user IDs
 
   Appointment({
     String? id,
-    required this.title,
-    required this.startTime,
-    required this.endTime,
-    required this.location,
-    required this.attendees,
-  }) : id = id ?? Uuid().v4().toString();
+    required this.start,
+    String? locationId,
+    List<String>? attendees,
+    String? title, 
+  })  : id = id ?? Uuid().v4().toString(),
+        attendees = attendees ?? [],
+        title = title ?? 'Kegeltermin';
 
   Map<String, dynamic> toMap() => {
     'id': id,
-    'title': title,
-    'startTime': startTime,
-    'endTime': endTime,
-    'location': location,
+    'startTime': start,
+    'location': locationId,
     'attendees': attendees,
   };
 
   factory Appointment.fromMap(Map<String, dynamic> map) => Appointment(
     id: map['id'],
-    title: map['title'],
-    startTime: map['startTime'],
-    endTime: map['endTime'],
-    location: map['location'],
+    start: map['startTime'],
+    locationId: map['location'],
     attendees: List<String>.from(map['attendees'] ?? []),
   );
 }
