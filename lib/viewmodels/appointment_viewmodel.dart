@@ -1,10 +1,13 @@
 import 'dart:developer';
 import 'package:claudiskegelapp/models/appointment_model.dart';
+import 'package:claudiskegelapp/models/attendance_model.dart';
 import 'package:claudiskegelapp/repositories/appointment_repository.dart';
+import 'package:claudiskegelapp/repositories/attendance_repository.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentViewModel extends ChangeNotifier {
   final AppointmentRepository _appointmentRepository = AppointmentRepository();
+  final AttendanceRepository _attendanceRepository = AttendanceRepository();
 
   List<Appointment> _appointments = [];
   bool _isLoading = false;
@@ -80,7 +83,7 @@ class AppointmentViewModel extends ChangeNotifier {
   Future<void> loadUserAttendanceStatus(String userId) async {
     for (final appointment in _appointments) {
       try {
-        final status = await _appointmentRepository.getUserAttendanceStatus(appointment.id, userId);
+        final status = await _attendanceRepository.getUserAttendanceStatus(appointment.id, userId);
         _userAttendancePerAppointment[appointment.id] = status;
       } catch (e) {
         log('Fehler beim Laden des Status für Termin ${appointment.id}: $e');
@@ -92,7 +95,7 @@ class AppointmentViewModel extends ChangeNotifier {
 
   Future<void> updateUserAttendance(String appointmentId, String userId, AttendanceStatus status) async {
     try {
-      await _appointmentRepository.setUserAttendance(appointmentId, userId, status);
+      await _attendanceRepository.setUserAttendance(appointmentId, userId, status);
       _userAttendancePerAppointment[appointmentId] = status;
       notifyListeners();
     } catch (e) {
